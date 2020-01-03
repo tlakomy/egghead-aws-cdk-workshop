@@ -2,26 +2,26 @@ import cdk = require("@aws-cdk/core");
 import lambda = require("@aws-cdk/aws-lambda");
 import dynamodb = require("@aws-cdk/aws-dynamodb");
 
-export class HitCounter extends cdk.Construct {
+export class TodoAdder extends cdk.Construct {
   public readonly handler: lambda.Function;
 
   constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
     super(scope, id);
 
-    const hitsTable = new dynamodb.Table(this, "Hits", {
-      partitionKey: { name: "path", type: dynamodb.AttributeType.STRING }
+    const todosTable = new dynamodb.Table(this, "Todos", {
+      partitionKey: { name: "todo", type: dynamodb.AttributeType.STRING }
     });
 
-    this.handler = new lambda.Function(this, "HitCounterHandler", {
+    this.handler = new lambda.Function(this, "TodoAdderHandler", {
       runtime: lambda.Runtime.NODEJS_10_X,
-      handler: "hitcounter-lambda.handler",
+      handler: "todoAdder-lambda.handler",
       code: lambda.Code.fromAsset("lambda"),
       environment: {
-        HITS_TABLE_NAME: hitsTable.tableName
+        TODOS_TABLE_NAME: todosTable.tableName
       }
     });
 
     // Grant the lambda role read/write permissions to this table
-    hitsTable.grantReadWriteData(this.handler);
+    todosTable.grantReadWriteData(this.handler);
   }
 }

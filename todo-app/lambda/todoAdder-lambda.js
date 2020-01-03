@@ -7,13 +7,13 @@ exports.handler = async function(event) {
   const dynamo = new DynamoDB();
 
   const params = {
-    TableName: process.env.HITS_TABLE_NAME,
-    Item: {
-      path: { S: "1" }
+    "TableName": process.env.TODOS_TABLE_NAME,
+    "Item": {
+      todo: { S: "Learn DynamoDB" }
     }
   };
 
-  const result = await ssdynamo.putItem(params).promise();
+  const result = await dynamo.putItem(params).promise();
 
   return {
     statusCode: 200,
