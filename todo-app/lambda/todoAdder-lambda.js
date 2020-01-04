@@ -8,7 +8,7 @@ exports.handler = async function(event) {
   console.log(queryStringParameters);
 
   try {
-    if (queryStringParameters.todo) {
+    if (queryStringParameters && queryStringParameters.todo) {
       console.log("Putting a new item into DynamoDB");
       await dynamo
         .putItem({
