@@ -8,7 +8,7 @@ export class TodoAppStack extends cdk.Stack {
 
     const todoAdder = new TodoAdder(this, "TodoAdderStack", {});
 
-    new apiGateway.LambdaRestApi(this, "Endpoint", {
+    new apiGateway.LambdaRestApi(this, "TodoEndpoint", {
       handler: todoAdder.handler
     });
   }

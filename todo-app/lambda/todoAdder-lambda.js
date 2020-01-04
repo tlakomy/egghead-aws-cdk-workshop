@@ -36,7 +36,10 @@ exports.handler = async function(event) {
 
   return {
     statusCode,
-    headers: { "Content-Type": "text/plain" },
-    body: response
+    headers: {
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*"
+    },
+    body: JSON.stringify(response, null, 2)
   };
 };

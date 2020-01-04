@@ -2,16 +2,41 @@ import React from "react";
 
 import "./App.css";
 
+type TodoObject = {
+  todo: string;
+};
+
 const App: React.FC = () => {
   const inputElement = React.useRef<HTMLInputElement>(null);
-  const [todos, setTodos] = React.useState<Array<string>>([]);
+  const [todos, setTodos] = React.useState<Array<string> | null>(null);
 
   React.useEffect(() => {
-    setTodos(["Do the thing", "Do the thing", "Do the thing"]);
+    (async () => {
+      const response = await fetch(
+        "https://lo8b4qsdk1.execute-api.us-east-1.amazonaws.com/prod/"
+      );
+      const data = await response.json();
+
+      const newTodos = data.map((item: TodoObject) =>
+        Object.values(item.todo).join()
+      );
+      setTodos(newTodos);
+    })();
   }, []);
 
-  const renderTodos = () => todos.map(todo => <li>{todo}</li>);
-  const addTodo = (todo: string) => setTodos([...todos, todo]);
+  const renderTodos = () => {
+    return todos && todos.length > 0 ? (
+      <ul className="cdk-todo--list">
+        {todos.map(todo => (
+          <li key={todo}>{todo}</li>
+        ))}
+      </ul>
+    ) : (
+      <span>No todos yet</span>
+    );
+  };
+
+  const addTodo = (todo: string) => todos && setTodos([...todos, todo]);
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
     const value = inputElement?.current?.value;
@@ -38,11 +63,7 @@ const App: React.FC = () => {
         <button onClick={handleClick}>Add</button>
       </label>
       <div className="cdk-todo--list-container">
-        {todos.length > 0 ? (
-          <ul className="cdk-todo--list">{renderTodos()}</ul>
-        ) : (
-          <span>No todos added yet</span>
-        )}
+        {todos === null ? <span>Loading ...</span> : renderTodos()}
       </div>
     </div>
   );
