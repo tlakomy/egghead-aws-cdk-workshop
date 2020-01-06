@@ -6,21 +6,23 @@ type TodoObject = {
   todo: string;
 };
 
+const apiEndpoint = process.env.REACT_APP_TODO_ENDPOINT;
+
 const App: React.FC = () => {
   const inputElement = React.useRef<HTMLInputElement>(null);
   const [todos, setTodos] = React.useState<Array<string> | null>(null);
 
   React.useEffect(() => {
     (async () => {
-      const response = await fetch(
-        "https://lo8b4qsdk1.execute-api.us-east-1.amazonaws.com/prod/"
-      );
-      const data = await response.json();
+      if (apiEndpoint) {
+        const response = await fetch(apiEndpoint);
+        const data = await response.json();
 
-      const newTodos = data.map((item: TodoObject) =>
-        Object.values(item.todo).join()
-      );
-      setTodos(newTodos);
+        const newTodos = data.map((item: TodoObject) =>
+          Object.values(item.todo).join()
+        );
+        setTodos(newTodos);
+      }
     })();
   }, []);
 
