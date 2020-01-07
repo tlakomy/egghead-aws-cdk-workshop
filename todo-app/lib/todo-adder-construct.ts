@@ -9,7 +9,7 @@ export class TodoAdder extends cdk.Construct {
     super(scope, id);
 
     const todosTable = new dynamodb.Table(this, "Todos", {
-      partitionKey: { name: "todo", type: dynamodb.AttributeType.STRING }
+      partitionKey: { name: "id", type: dynamodb.AttributeType.STRING }
     });
 
     this.handler = new lambda.Function(this, "TodoAdderHandler", {

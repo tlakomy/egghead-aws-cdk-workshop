@@ -1,4 +1,5 @@
 const { DynamoDB } = require("aws-sdk");
+const uuid = require("uuid");
 
 exports.handler = async function(event) {
   const dynamo = new DynamoDB();
@@ -14,6 +15,7 @@ exports.handler = async function(event) {
         .putItem({
           "TableName": process.env.TODOS_TABLE_NAME,
           "Item": {
+            id: { S: uuid() },
             todo: { S: queryStringParameters.todo }
           }
         })
