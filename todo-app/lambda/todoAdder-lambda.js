@@ -1,4 +1,5 @@
 const { DynamoDB } = require("aws-sdk");
+
 const uuid = require("uuid");
 
 exports.handler = async function(event) {
@@ -28,7 +29,7 @@ exports.handler = async function(event) {
           "Limit": 10
         })
         .promise();
-      response = scanResult.Items;
+      response = scanResult.Items.map(DynamoDB.Converter.unmarshall);
     }
   } catch (error) {
     console.log(error);

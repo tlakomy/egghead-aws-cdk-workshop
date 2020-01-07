@@ -1,27 +1,27 @@
 import React from "react";
+import uuid from "uuid";
 
 import "./App.css";
 
 type TodoObject = {
   todo: string;
+  id: string;
 };
 
 const apiEndpoint = process.env.REACT_APP_TODO_ENDPOINT;
 
 const App: React.FC = () => {
   const inputElement = React.useRef<HTMLInputElement>(null);
-  const [todos, setTodos] = React.useState<Array<string> | null>(null);
+  const [todos, setTodos] = React.useState<Array<TodoObject> | null>(null);
 
   React.useEffect(() => {
     (async () => {
       if (apiEndpoint) {
         const response = await fetch(apiEndpoint);
         const data = await response.json();
+        console.log(data);
 
-        const newTodos = data.map((item: TodoObject) =>
-          Object.values(item.todo).join()
-        );
-        setTodos(newTodos);
+        setTodos(data);
       }
     })();
   }, []);
@@ -29,8 +29,8 @@ const App: React.FC = () => {
   const renderTodos = () => {
     return todos && todos.length > 0 ? (
       <ul className="cdk-todo--list">
-        {todos.map(todo => (
-          <li key={todo}>{todo}</li>
+        {todos.map(({ id, todo }) => (
+          <li key={id}>{todo}</li>
         ))}
       </ul>
     ) : (
@@ -38,7 +38,8 @@ const App: React.FC = () => {
     );
   };
 
-  const addTodo = (todo: string) => todos && setTodos([...todos, todo]);
+  const addTodo = (todo: string) =>
+    todos && setTodos([...todos, { todo, id: uuid() }]);
 
   const handleKeyPress = (event: React.KeyboardEvent) => {
     const value = inputElement?.current?.value;
