@@ -23,6 +23,8 @@
   "dependencies": {
     "@aws-cdk/aws-apigateway": "^1.23.0",
     "@aws-cdk/aws-s3": "^1.23.0",
+    "@aws-cdk/aws-s3-deployment": "^1.23.0",
+    "@aws-cdk/aws-s3-notifications": "^1.23.0",
     "@aws-cdk/aws-sns": "1.23.0",
     "@aws-cdk/aws-sns-subscriptions": "1.23.0",
     "@aws-cdk/aws-sqs": "1.23.0",
