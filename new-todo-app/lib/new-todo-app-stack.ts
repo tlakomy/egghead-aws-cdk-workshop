@@ -7,10 +7,13 @@ import * as s3Deployment from "@aws-cdk/aws-s3-deployment";
 
 import { Duration } from "@aws-cdk/core";
 import { EventType } from "@aws-cdk/aws-s3";
+import { TodoDatabase } from "./todo-database";
 
 export class NewTodoAppStack extends cdk.Stack {
   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
+
+    const todoDatabase = new TodoDatabase(this, "TodoDatabase");
 
     const logoBucket = new s3.Bucket(this, "LogoBucket", {
       publicReadAccess: true
