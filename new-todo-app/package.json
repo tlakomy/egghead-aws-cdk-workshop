@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@aws-cdk/aws-apigateway": "^1.23.0",
+    "@aws-cdk/aws-dynamodb": "^1.23.0",
     "@aws-cdk/aws-s3": "^1.23.0",
     "@aws-cdk/aws-s3-deployment": "^1.23.0",
     "@aws-cdk/aws-s3-notifications": "^1.23.0",
