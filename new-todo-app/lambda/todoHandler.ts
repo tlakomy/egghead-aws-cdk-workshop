@@ -1,4 +1,5 @@
 const { DynamoDB } = require("aws-sdk");
+const uuid = require("uuid");
 
 const createResponse = (body: string, statusCode = 200) => {
   return {
@@ -34,7 +35,7 @@ exports.handler = async function(event: AWSLambda.APIGatewayEvent) {
           .putItem({
             "TableName": tableName,
             "Item": {
-              id: { S: "random_id" },
+              id: { S: uuid() },
               todo: { S: todo }
             }
           })
@@ -43,6 +44,24 @@ exports.handler = async function(event: AWSLambda.APIGatewayEvent) {
         return createResponse(`${todo} added to the database`);
       }
       return createResponse("Todo is missing", 400);
+    }
+
+    if (httpMethod === "DELETE") {
+      if (queryStringParameters && queryStringParameters.id) {
+        const { id } = queryStringParameters;
+        await dynamo
+          .deleteItem({
+            "TableName": tableName,
+            "Key": {
+              id: { S: id }
+            }
+          })
+          .promise();
+        return createResponse(
+          `Todo item with an id of ${id} deleted from the database`
+        );
+      }
+      return createResponse("ID is missing", 400);
     }
 
     return createResponse(
