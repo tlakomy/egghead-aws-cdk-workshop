@@ -32,7 +32,7 @@ const Header = styled.header`
 `;
 
 const NewTodoSection = styled.section`
-    margin: 24px 0;
+    margin: 24px;
     display: flex;
     flex-direction: column;
 `;
@@ -80,7 +80,7 @@ const ListItem = styled.li`
         color: #002f34;
         font-weight: 700;
         margin-left: 16px;
-        padding: 4px;
+        padding: 4px 8px;
         border-radius: 4px;
         background-color: #fff;
         font-size: 14px;
@@ -144,7 +144,7 @@ const App = () => {
                 <label htmlFor="add-todo">Add a new todo</label>
                 <TodoInputContainer>
                     <input
-                        id="#add-todo"
+                        id="add-todo"
                         type="text"
                         ref={inputElement}
                         onKeyPress={handleKeyPress}
