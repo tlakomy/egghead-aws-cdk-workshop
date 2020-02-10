@@ -14,9 +14,9 @@ const Wrapper = styled.main`
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    width: 600px;
+    width: 50rem;
     max-width: 80vw;
-    min-height: 600px;
+    min-height: 60rem;
     border-radius: 4px;
     border: solid 1px #d8dfe0;
     background: #fff;
@@ -27,50 +27,51 @@ const Header = styled.header`
     background: #002f34;
     color: #fff;
     text-align: center;
-    font-size: 36px;
-    padding: 24px 0;
+    font-size: 3.6rem;
+    padding: 2.4rem 0;
 `;
 
 const NewTodoSection = styled.section`
-    margin: 24px;
+    margin: 2.4rem;
     display: flex;
     flex-direction: column;
+    label {
+        font-size: 1.4rem;
+    }
 `;
 
 const TodoInputContainer = styled.div`
     display: flex;
     justify-content: center;
-    margin-top: 8px;
-    label: {
-        font-size: 24px;
-    }
+    margin-top: 0.8rem;
 
     input {
-        font-size: 20px;
+        font-size: 2rem;
         min-width: 50%;
-        margin-right: 8px;
-        padding: 8px;
+        margin-right: 0.8rem;
+        padding: 0.8rem;
     }
 
     button {
+        cursor: pointer;
         font-weight: 700;
         font-size: 16px;
         color: white;
         border-radius: 4px;
         background-color: #002f34;
-        padding: 12px 14px;
+        padding: 1.2rem 1.4rem;
     }
 `;
 
 const TodoList = styled.ul`
     width: 80%;
-    margin-top: 36px;
+    margin-top: 3.6rem;
 `;
 
 const ListItem = styled.li`
     display: flex;
-    margin-top: 8px;
-    font-size: 20px;
+    margin-top: 0.8rem;
+    font-size: 2rem;
 
     span {
         width: 100%;
@@ -80,11 +81,15 @@ const ListItem = styled.li`
         color: #002f34;
         font-weight: 700;
         margin-left: 16px;
-        padding: 4px 8px;
+        padding: 0.4rem 0.8rem;
         border-radius: 4px;
         background-color: #fff;
-        font-size: 14px;
+        font-size: 1.4rem;
     }
+`;
+
+const LoadingText = styled.span`
+    font-size: 1.6rem;
 `;
 
 const App = () => {
@@ -152,7 +157,11 @@ const App = () => {
                     <button onClick={handleClick}>Add todo</button>
                 </TodoInputContainer>
             </NewTodoSection>
-            {todos === null ? <span>Loading ...</span> : renderTodos()}
+            {todos === null ? (
+                <LoadingText>Loading ...</LoadingText>
+            ) : (
+                renderTodos()
+            )}
         </Wrapper>
     );
 };
