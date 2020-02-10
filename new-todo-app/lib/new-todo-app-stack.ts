@@ -15,6 +15,11 @@ export class NewTodoAppStack extends cdk.Stack {
       publicReadAccess: true
     });
 
+    const websiteBucket = new s3.Bucket(this, "WebsiteBucket", {
+      publicReadAccess: true,
+      websiteIndexDocument: "index.html"
+    });
+
     new apiGateway.LambdaRestApi(this, "Endpoint", {
       handler: todoDatabase.todoHandler
     });
@@ -23,6 +28,15 @@ export class NewTodoAppStack extends cdk.Stack {
       destinationBucket: logoBucket,
       retainOnDelete: true, // keep current files
       sources: [s3Deployment.Source.asset("./assets")]
+    });
+
+    new s3Deployment.BucketDeployment(this, "DeployWebsite", {
+      sources: [s3Deployment.Source.asset("../frontend/build")],
+      destinationBucket: websiteBucket
+    });
+
+    new cdk.CfnOutput(this, "WebsiteUrl", {
+      value: websiteBucket.bucketWebsiteUrl
     });
   }
 }
