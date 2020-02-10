@@ -4,7 +4,10 @@ const uuid = require("uuid");
 const createResponse = (body: string, statusCode = 200) => {
   return {
     statusCode,
-    headers: { "Content-Type": "text/plain" },
+    headers: {
+      "Content-Type": "text/plain",
+      "Access-Control-Allow-Origin": "*" // Required for CORS support to work
+    },
     body: JSON.stringify(body, null, 2)
   };
 };
