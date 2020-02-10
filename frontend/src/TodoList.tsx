@@ -18,8 +18,9 @@ const List = styled.ul`
 
 const ListItem = styled.li`
     display: flex;
-    margin-top: 0.8rem;
+    padding: 1.4rem 0;
     font-size: 2rem;
+    border-bottom: 1px solid #d8dfe0;
 
     span {
         width: 100%;
