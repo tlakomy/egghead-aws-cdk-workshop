@@ -2,10 +2,8 @@ import React from "react";
 import styled from "@emotion/styled";
 import uuid from "uuid";
 
-type TodoObject = {
-    todo: string;
-    id: string;
-};
+import ErrorMessage from "./ErrorMessage";
+import TodoList, { TodoObject } from "./TodoList";
 
 const apiEndpoint = process.env.REACT_APP_TODO_ENDPOINT;
 
@@ -63,68 +61,43 @@ const TodoInputContainer = styled.div`
     }
 `;
 
-const TodoList = styled.ul`
-    width: 80%;
-    margin-top: 3.6rem;
-`;
-
-const ListItem = styled.li`
-    display: flex;
-    margin-top: 0.8rem;
-    font-size: 2rem;
-
-    span {
-        width: 100%;
-    }
-
-    button {
-        color: #002f34;
-        font-weight: 700;
-        margin-left: 16px;
-        padding: 0.4rem 0.8rem;
-        border-radius: 4px;
-        background-color: #fff;
-        font-size: 1.4rem;
-    }
-`;
-
 const LoadingText = styled.span`
     font-size: 1.6rem;
 `;
 
 const App = () => {
     const inputElement = React.useRef<HTMLInputElement>(null);
-    const [todos, setTodos] = React.useState<Array<TodoObject> | null>(null);
+    const [todos, setTodos] = React.useState<Array<TodoObject>>([]);
+    const [isLoading, setLoading] = React.useState(true);
 
     React.useEffect(() => {
         (async () => {
             if (apiEndpoint) {
                 const response = await fetch(apiEndpoint);
                 const data = await response.json();
-                console.log(data);
 
                 setTodos(data);
+                setLoading(false);
             }
         })();
     }, []);
 
-    const renderTodos = () => {
-        return todos && todos.length > 0 ? (
-            <TodoList>
-                {todos.map(({ id, todo }) => (
-                    <ListItem key={id}>
-                        <span>{todo}</span>
-                        <button>delete</button>
-                    </ListItem>
-                ))}
-            </TodoList>
-        ) : (
-            <span>No todos yet</span>
-        );
-    };
+    if (!apiEndpoint) {
+        return <ErrorMessage />;
+    }
 
-    const addTodo = (todo: string) =>
-        todos && setTodos([...todos, { todo, id: uuid() }]);
+    const addTodo = (todo: string) => {
+        const newTodo = { todo, id: uuid() };
+        setTodos([...todos, newTodo]);
+        fetch(apiEndpoint, {
+            method: "POST",
+            body: JSON.stringify(newTodo)
+        });
+
+        if (inputElement.current) {
+            inputElement.current.value = "";
+        }
+    };
 
     const handleKeyPress = (event: React.KeyboardEvent) => {
         const value = inputElement?.current?.value;
@@ -133,10 +106,20 @@ const App = () => {
         }
     };
 
-    const handleClick = () => {
+    const addTodoClick = () => {
         const value = inputElement?.current?.value;
         if (value) {
             addTodo(value);
+        }
+    };
+
+    const deleteTodo = (id?: string) => {
+        if (id) {
+            fetch(apiEndpoint, {
+                method: "DELETE",
+                body: JSON.stringify({ id })
+            });
+            setTodos(todos.filter(todo => todo.id !== id));
         }
     };
 
@@ -154,13 +137,13 @@ const App = () => {
                         ref={inputElement}
                         onKeyPress={handleKeyPress}
                     />
-                    <button onClick={handleClick}>Add todo</button>
+                    <button onClick={addTodoClick}>Add todo</button>
                 </TodoInputContainer>
             </NewTodoSection>
-            {todos === null ? (
+            {isLoading ? (
                 <LoadingText>Loading ...</LoadingText>
             ) : (
-                renderTodos()
+                <TodoList todos={todos} deleteTodo={deleteTodo} />
             )}
         </Wrapper>
     );
