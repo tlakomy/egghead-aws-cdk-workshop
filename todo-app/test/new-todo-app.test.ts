@@ -3,12 +3,10 @@ import * as cdk from "@aws-cdk/core";
 import NewTodoApp = require("../lib/new-todo-app-stack");
 
 const app = new cdk.App();
-// WHEN
 const stack = new NewTodoApp.NewTodoAppStack(app, "MyTestStack");
 
 describe("TodoAppStack creates all necessary resources", () => {
     it("Creates a Todo DynamoDB table", () => {
-        // THEN
         expectCDK(stack).to(
             haveResource("AWS::DynamoDB::Table", {
                 "KeySchema": [
