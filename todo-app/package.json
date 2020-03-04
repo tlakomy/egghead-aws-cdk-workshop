@@ -1,35 +1,36 @@
 {
-  "name": "new-todo-app",
-  "version": "0.1.0",
-  "bin": {
-    "new-todo-app": "bin/new-todo-app.js"
-  },
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc -w",
-    "test": "jest",
-    "cdk": "cdk"
-  },
-  "devDependencies": {
-    "@aws-cdk/assert": "1.23.0",
-    "@types/jest": "^24.0.22",
-    "@types/node": "^10.17.5",
-    "aws-cdk": "1.23.0",
-    "jest": "^24.9.0",
-    "ts-jest": "^24.1.0",
-    "ts-node": "^8.1.0",
-    "typescript": "~3.7.2"
-  },
-  "dependencies": {
-    "@aws-cdk/aws-apigateway": "^1.23.0",
-    "@aws-cdk/aws-dynamodb": "^1.23.0",
-    "@aws-cdk/aws-s3": "^1.23.0",
-    "@aws-cdk/aws-s3-deployment": "^1.23.0",
-    "@aws-cdk/aws-s3-notifications": "^1.23.0",
-    "@aws-cdk/aws-sns": "1.23.0",
-    "@aws-cdk/aws-sns-subscriptions": "1.23.0",
-    "@aws-cdk/aws-sqs": "1.23.0",
-    "@aws-cdk/core": "1.23.0",
-    "@types/aws-lambda": "^8.10.40"
-  }
+    "name": "new-todo-app",
+    "version": "0.1.0",
+    "bin": {
+        "new-todo-app": "bin/new-todo-app.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "watch": "tsc -w",
+        "test": "jest",
+        "cdk": "cdk"
+    },
+    "devDependencies": {
+        "@aws-cdk/assert": "1.26.0",
+        "@types/jest": "^24.0.22",
+        "@types/node": "^10.17.5",
+        "aws-cdk": "1.26.0",
+        "jest": "^24.9.0",
+        "ts-jest": "^24.1.0",
+        "ts-node": "^8.1.0",
+        "typescript": "~3.7.2"
+    },
+    "dependencies": {
+        "@aws-cdk/aws-apigateway": "1.26.0",
+        "@aws-cdk/aws-dynamodb": "1.26.0",
+        "@aws-cdk/aws-s3": "1.26.0",
+        "@aws-cdk/aws-s3-deployment": "1.26.0",
+        "@aws-cdk/aws-s3-notifications": "1.26.0",
+        "@aws-cdk/aws-sns": "1.26.0",
+        "@aws-cdk/aws-sns-subscriptions": "1.26.0",
+        "@aws-cdk/aws-sqs": "1.26.0",
+        "@aws-cdk/core": "1.26.0",
+        "@types/aws-lambda": "^8.10.40",
+        "cdk-spa-deploy": "0.7.3"
+    }
 }
