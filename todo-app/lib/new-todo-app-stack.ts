@@ -31,7 +31,7 @@ export class NewTodoAppStack extends cdk.Stack {
             sources: [s3Deployment.Source.asset("./assets")]
         });
 
-        new SPADeploy(this, "spaDeploy").createSiteWithCloudfront({
+        new SPADeploy(this, "spaDeploy").createBasicSite({
             indexDoc: "index.html",
             websiteFolder: "../frontend/build"
         });
