@@ -35,7 +35,7 @@ export class NewTodoAppStack extends cdk.Stack {
 
         new amplify.CfnApp(this, "TodoAmplifyApp", {
             name: "todo-app",
-            oauthToken: "2aca3ce0fd72107044e9da4c9be8560138094090",
+            oauthToken: "d342096f2491a44835a40debb674814e38970269",
             repository: "https://github.com/tlakomy/egghead-aws-cdk-workshop"
         });
 
