@@ -7,7 +7,7 @@
     "scripts": {
         "build": "tsc",
         "watch": "tsc -w",
-        "test": "jest",
+        "test": "jest --watch",
         "cdk": "cdk"
     },
     "devDependencies": {
