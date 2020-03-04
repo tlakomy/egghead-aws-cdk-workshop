@@ -33,12 +33,16 @@ export class NewTodoAppStack extends cdk.Stack {
             sources: [s3Deployment.Source.asset("./assets")]
         });
 
-        // TODO - check if Amplify app works later this month
-        // const amplifyApp = new amplify.CfnApp(this, "TodoAmplifyApp", {
-        //     name: "todo-app",
-        //     oauthToken: "d342096f2491a44835a40debb674814e38970269",
-        //     repository: "https://github.com/tlakomy/egghead-aws-cdk-workshop"
-        // });
+        const todoAmplifyApp = new amplify.CfnApp(this, "TodoAmplifyApp", {
+            name: "todo-app",
+            oauthToken: "5d2b0e970ea54d423c857fb1498d28f2967e02b1",
+            repository: "https://github.com/tlakomy/egghead-aws-cdk-workshop"
+        });
+
+        new amplify.CfnBranch(this, "MasterBranch", {
+            appId: todoAmplifyApp.attrAppId,
+            branchName: "master"
+        });
 
         // Using the SPA Deploy construct from npm:
 
