@@ -2,7 +2,9 @@ import * as cdk from "@aws-cdk/core";
 import * as apiGateway from "@aws-cdk/aws-apigateway";
 import * as s3 from "@aws-cdk/aws-s3";
 import * as s3Deployment from "@aws-cdk/aws-s3-deployment";
-import { SPADeploy } from "cdk-spa-deploy";
+
+import * as amplify from "@aws-cdk/aws-amplify";
+// import { SPADeploy } from "cdk-spa-deploy";
 
 import { TodoDatabase } from "./todo-database";
 
@@ -31,12 +33,20 @@ export class NewTodoAppStack extends cdk.Stack {
             sources: [s3Deployment.Source.asset("./assets")]
         });
 
-        new SPADeploy(this, "spaDeploy").createBasicSite({
-            indexDoc: "index.html",
-            websiteFolder: "../frontend/build"
+        new amplify.CfnApp(this, "TodoAmplifyApp", {
+            name: "todo-app",
+            oauthToken: "2aca3ce0fd72107044e9da4c9be8560138094090",
+            repository: "https://github.com/tlakomy/egghead-aws-cdk-workshop"
         });
 
-        // OLD - deploying the site to an S3 bucket:
+        // Using the SPA Deploy construct from npm:
+
+        // new SPADeploy(this, "spaDeploy").createBasicSite({
+        //     indexDoc: "index.html",
+        //     websiteFolder: "../frontend/build"
+        // });
+
+        // Deploying the site to an S3 bucket:
         // new s3Deployment.BucketDeployment(this, "DeployWebsite", {
         //     sources: [s3Deployment.Source.asset("../frontend/build")],
         //     destinationBucket: websiteBucket
