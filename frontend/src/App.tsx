@@ -75,26 +75,36 @@ const App = () => {
     const inputElement = React.useRef<HTMLInputElement>(null);
     const [todos, setTodos] = React.useState<Array<TodoObject>>([]);
     const [isLoading, setLoading] = React.useState(true);
+    const [isError, setError] = React.useState(!apiEndpoint);
 
     React.useEffect(() => {
         (async () => {
             if (apiEndpoint) {
-                const response = await fetch(apiEndpoint);
-                const data = await response.json();
+                try {
+                    const response = await fetch(apiEndpoint);
+                    if (!response.ok) {
+                        setError(true);
+                        return;
+                    }
+                    const data = await response.json();
 
-                setTodos(data);
-                setLoading(false);
+                    setTodos(data);
+                    setLoading(false);
+                } catch {
+                    setError(true);
+                }
             }
         })();
     }, []);
 
-    if (!apiEndpoint) {
+    if (isError) {
         return <ErrorMessage />;
     }
 
     const addTodo = (todo: string) => {
         const newTodo = { todo, id: uuid() };
         setTodos([...todos, newTodo]);
+        if (!apiEndpoint) return;
         fetch(apiEndpoint, {
             method: "POST",
             body: JSON.stringify(newTodo)
@@ -121,6 +131,7 @@ const App = () => {
 
     const deleteTodo = (id?: string) => {
         if (id) {
+            if (!apiEndpoint) return;
             fetch(apiEndpoint, {
                 method: "DELETE",
                 body: JSON.stringify({ id })
