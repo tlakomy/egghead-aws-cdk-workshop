@@ -27,7 +27,9 @@ Hey! My name is Tomasz Łakomy, born & raised in Poland (that's why this worksho
 
 I've been programming for a living since 2012 and for the last couple of years I've been giving talks, writing articles and recording lessons about things I'm interested in - mostly React, testing and (that's why you're here!) - AWS.
 
-AWS is a huge topic, so to solidify my own knowledge and making sure I (more or less) know what I'm talking about, I got AWS certified. I'm currently an AWS Certified Solutions Architect: Associate and an AWS Certified Developer: Associate. When it comes to AWS itself, I'm especially interested in serverless solutions and I'm happy to say that there won't be **any** servers in this workshop 😎
+AWS is a huge topic, so to solidify my own knowledge and making sure I (more or less) know what I'm talking about, I got AWS certified. I'm currently holding (not literally) an **AWS Certified Solutions Architect: Associate** certificate as well as **AWS Certified Developer: Associate**.
+
+When it comes to AWS itself, I'm especially interested in serverless solutions and I'm happy to say that there won't be **any** servers in this workshop 😎
 
 ## Are we going to go out of AWS Free Tier?
 
