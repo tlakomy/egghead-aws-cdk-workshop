@@ -1,6 +1,8 @@
 # Build an app with AWS Cloud Development Kit Workshop
 
-**Hello!** Welcome to **Build an app with AWS Cloud Development Kit [egghead.io](https://egghead.io/s/km6vr) Workshop**. Let's start my addressing some questions you might have:
+**Hello!** Welcome to 🌟**Build an app with AWS Cloud Development Kit [egghead.io](https://egghead.io/s/km6vr) Workshop**🌟 
+
+Let's start by addressing some questions you might have:
 
 ## What do I need to do before the workshop?
 
