@@ -33,9 +33,15 @@ AWS is a huge topic, so to solidify my own knowledge and making sure I (more or 
 
 When it comes to AWS itself, I'm especially interested in serverless solutions and I'm happy to say that there won't be **any** servers in this workshop 😎
 
+My twitter handle is [@tlakomy](https://twitter.com/tlakomy) and Twitter is usually the best way to reach me.
+
 ## Are we going to go out of AWS Free Tier?
 
 **NO.** Every service we're going to use (and every resource we'll provision) will stay well within the free tier. I invite you to experiment with different AWS services, but everything that is a part of the course won't incur additional charges.
+
+In order to be 100% sure that you won't have to pay more to AWS than you'd like to - take a look at this (5 minute long) free collection:
+
+[Use AWS Billing & Cost Management Dashboard to keep yout AWS bill to minimum](https://egghead.io/playlists/use-aws-billing-cost-management-dashboard-to-keep-your-aws-bill-to-minimum-ff0f?af=6p5abz)
 
 Please take a look at https://aws.amazon.com/free/ to find out more about AWS Free Tier.
 
@@ -46,8 +52,8 @@ Absolutely!
 During this course we're going to talk quite a bit about AWS Lambda, DynamoDB and we're going to play with AWS SAM a bit. This is **not** required but I think you will get more out of the workshop if you take a look at those free resources first (don't worry - I will be explaning those concepts during the workshop as well):
 
 * [Learn AWS Lambda from scratch](https://egghead.io/playlists/learn-aws-lambda-from-scratch-d29d?af=6p5abz)
-* [Learn DynamoDB from scratch](https://egghead.io/playlists/learn-aws-dynamodb-from-scratch-21c3)
 * [Learn AWS Serverless Application Model (AWS SAM) from scratch](https://egghead.io/playlists/learn-aws-serverless-application-model-aws-sam-framework-from-scratch-baf9?af=6p5abz)
+* [Learn DynamoDB from scratch (currently work in progress)](https://egghead.io/playlists/learn-aws-dynamodb-from-scratch-21c3)
 * [Chris Bascardi](https://egghead.io/instructors/chris-biscardi?af=6p5abz) has an excellent collection of AWS resources as well, take a look a this [Intro to DynamoDB](https://egghead.io/playlists/intro-to-dynamodb-f35a?af=6p5abz) collection.
 
 My own notes: https://gist.github.com/tlakomy/f1312ec1fd092ece75a0f72403235fc8
