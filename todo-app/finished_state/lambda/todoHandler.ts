@@ -1,39 +1,43 @@
-const { DynamoDB } = require("aws-sdk");
+/// <reference types="aws-sdk" />
+import AWS = require("aws-sdk");
 const uuid = require("uuid");
 
-const createResponse = (body: string, statusCode = 200) => {
+const createResponse = (
+    body: string | AWS.DynamoDB.DocumentClient.ItemList,
+    statusCode = 200
+) => {
     return {
         statusCode,
         headers: {
             "Content-Type": "text/plain",
-            "Access-Control-Allow-Origin": "*" // Required for CORS support to work
+            "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+            "Access-Control-Allow-Methods": "GET, POST, DELETE, OPTIONS"
         },
         body: JSON.stringify(body, null, 2)
     };
 };
-const tableName = process.env.TABLE_NAME;
-const dynamo = new DynamoDB();
+const tableName = process.env.TABLE_NAME || "";
+const dynamo = new AWS.DynamoDB.DocumentClient();
 
 const getAllTodos = async () => {
     const scanResult = await dynamo
         .scan({
-            "TableName": tableName,
-            "Limit": 10
+            TableName: tableName
         })
         .promise();
 
-    return scanResult.Items.map(DynamoDB.Converter.unmarshall);
+    return scanResult;
 };
 
 const addTodoItem = async (data: { todo: string; id: string }) => {
     const { id, todo } = data;
     if (todo && todo !== "") {
         await dynamo
-            .putItem({
-                "TableName": tableName,
-                "Item": {
-                    id: { S: id || uuid() },
-                    todo: { S: todo }
+            .put({
+                TableName: tableName,
+                Item: {
+                    id: id || uuid(),
+                    todo
                 }
             })
             .promise();
@@ -43,12 +47,13 @@ const addTodoItem = async (data: { todo: string; id: string }) => {
 
 const deleteTodoItem = async (data: { id: string }) => {
     const { id } = data;
+
     if (id && id !== "") {
         await dynamo
-            .deleteItem({
-                "TableName": tableName,
-                "Key": {
-                    id: { S: id }
+            .delete({
+                TableName: tableName,
+                Key: {
+                    id
                 }
             })
             .promise();
@@ -61,14 +66,18 @@ exports.handler = async function(event: AWSLambda.APIGatewayEvent) {
     try {
         const { httpMethod, body: requestBody } = event;
 
+        if (httpMethod === "OPTIONS") {
+            return createResponse("ok");
+        }
+
         if (httpMethod === "GET") {
             const response = await getAllTodos();
 
-            return createResponse(response);
+            return createResponse(response.Items || []);
         }
 
         if (!requestBody) {
-            return createResponse("Missing request body", 400);
+            return createResponse("Missing request body", 500);
         }
 
         const data = JSON.parse(requestBody);
@@ -77,7 +86,7 @@ exports.handler = async function(event: AWSLambda.APIGatewayEvent) {
             const todo = await addTodoItem(data);
             return todo
                 ? createResponse(`${todo} added to the database`)
-                : createResponse("Todo is missing", 400);
+                : createResponse("Todo is missing", 500);
         }
 
         if (httpMethod === "DELETE") {
@@ -86,14 +95,15 @@ exports.handler = async function(event: AWSLambda.APIGatewayEvent) {
                 ? createResponse(
                       `Todo item with an id of ${id} deleted from the database`
                   )
-                : createResponse("ID is missing", 400);
+                : createResponse("ID is missing", 500);
         }
 
         return createResponse(
-            `We only accept GET, POST, and DELETE, not ${httpMethod}`,
-            400
+            `We only accept GET, POST, OPTIONS and DELETE, not ${httpMethod}`,
+            500
         );
     } catch (error) {
-        return createResponse(error, 400);
+        console.log(error);
+        return createResponse(error, 500);
     }
 };
