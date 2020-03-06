@@ -14,7 +14,7 @@ const createResponse = (body: string, statusCode = 200) => {
 const tableName = process.env.TABLE_NAME;
 const dynamo = new DynamoDB();
 
-const getAlllTodos = async () => {
+const getAllTodos = async () => {
     const scanResult = await dynamo
         .scan({
             "TableName": tableName,
@@ -62,7 +62,7 @@ exports.handler = async function(event: AWSLambda.APIGatewayEvent) {
         const { httpMethod, body: requestBody } = event;
 
         if (httpMethod === "GET") {
-            const response = await getAlllTodos();
+            const response = await getAllTodos();
 
             return createResponse(response);
         }
