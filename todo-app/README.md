@@ -18,7 +18,7 @@ The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
 ## Pre-workshop:
 
-Create an AWS account, install AWS CLI, AWS CDK, AWS SAM (including Docker) and configure your account
+Create an AWS account, install AWS CLI, AWS CDK, AWS SAM (including Docker) and configure your account.
 
 Hide `node_modules`, `**/*.d.ts` and `**/lesson*/**/*.js` files in VSCode using `Exclude` option in Settings
 

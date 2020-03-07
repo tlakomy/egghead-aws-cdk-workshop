@@ -1,6 +1,6 @@
 import { expect as expectCDK, haveResource } from "@aws-cdk/assert";
 import * as cdk from "@aws-cdk/core";
-import NewTodoApp = require("../lib/new-todo-app-stack");
+import NewTodoApp = require("../finished_state/lib/new-todo-app-stack");
 
 const app = new cdk.App();
 const stack = new NewTodoApp.NewTodoAppStack(app, "MyTestStack");
@@ -9,10 +9,10 @@ describe("TodoAppStack creates all necessary resources", () => {
     it("Creates a Todo DynamoDB table", () => {
         expectCDK(stack).to(
             haveResource("AWS::DynamoDB::Table", {
-                "KeySchema": [
+                KeySchema: [
                     {
-                        "AttributeName": "id",
-                        "KeyType": "HASH"
+                        AttributeName: "id",
+                        KeyType: "HASH"
                     }
                 ]
             })
@@ -22,8 +22,8 @@ describe("TodoAppStack creates all necessary resources", () => {
     it("Creates a todoHandler lambda function", () => {
         expectCDK(stack).to(
             haveResource("AWS::Lambda::Function", {
-                "Handler": "todoHandler.handler",
-                "Runtime": "nodejs12.x"
+                Handler: "todoHandler.handler",
+                Runtime: "nodejs12.x"
             })
         );
     });

@@ -8,7 +8,7 @@ import { SPADeploy } from "cdk-spa-deploy";
 
 import { TodoDatabase } from "./todo-database";
 
-export class NewTodoAppStack extends cdk.Stack {
+export class TodoAppStack extends cdk.Stack {
     constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
         super(scope, id, props);
 
@@ -64,7 +64,7 @@ export class NewTodoAppStack extends cdk.Stack {
 }
 
 // Pre-database stack:
-// export class NewTodoAppStack extends cdk.Stack {
+// export class TodoAppStack extends cdk.Stack {
 //   constructor(scope: cdk.App, id: string, props?: cdk.StackProps) {
 //     super(scope, id, props);
 
