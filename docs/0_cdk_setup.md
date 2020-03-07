@@ -34,7 +34,7 @@ What you're seeing inside is a result of running
 
 which creates a sample stack with an SQS Queue and SNS Topic.
 
-(_Note: you don't need to know what is SQS and SNS, that's perfectly fine_).
+(_Note: you don't need to know what SQS and SNS are, that's perfectly fine, we are not going to use them in this workshop_).
 
 ## Anatomy of a stack
 
