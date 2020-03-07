@@ -110,6 +110,13 @@ Every construct takes 3 arguments:
 
 1. Run `cdk deploy` again and check out the result in CloudFormation console
 
+## What we've learned so far:
+
+- What's Amazon CDK
+- Deploying stacks to AWS
+- Reviewing differences between stacks with `cdk diff`
+- Reviewing generated CloudFormation template with `cdk synth`
+
 ## References
 
 - https://aws.amazon.com/cdk/
