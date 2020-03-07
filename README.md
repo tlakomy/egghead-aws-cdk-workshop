@@ -1,6 +1,6 @@
 # Build an app with AWS Cloud Development Kit Workshop
 
-**Hello!** Welcome to 🌟**Build an app with AWS Cloud Development Kit [egghead.io](https://egghead.io/s/km6vr) Workshop**🌟 
+**Hello!** Welcome to 🌟**Build an app with AWS Cloud Development Kit [egghead.io](https://egghead.io/s/km6vr) Workshop**🌟
 
 Let's start by addressing some questions you might have:
 
@@ -51,9 +51,13 @@ Absolutely!
 
 During this course we're going to talk quite a bit about AWS Lambda, DynamoDB and we're going to play with AWS SAM a bit. This is **not** required but I think you will get more out of the workshop if you take a look at those free resources first (don't worry - I will be explaning those concepts during the workshop as well):
 
-* [Learn AWS Lambda from scratch](https://egghead.io/playlists/learn-aws-lambda-from-scratch-d29d?af=6p5abz)
-* [Learn AWS Serverless Application Model (AWS SAM) from scratch](https://egghead.io/playlists/learn-aws-serverless-application-model-aws-sam-framework-from-scratch-baf9?af=6p5abz)
-* [Learn DynamoDB from scratch (currently work in progress)](https://egghead.io/playlists/learn-aws-dynamodb-from-scratch-21c3)
-* [Chris Bascardi](https://egghead.io/instructors/chris-biscardi?af=6p5abz) has an excellent collection of AWS resources as well, take a look a this [Intro to DynamoDB](https://egghead.io/playlists/intro-to-dynamodb-f35a?af=6p5abz) collection.
+- [Learn AWS Lambda from scratch](https://egghead.io/playlists/learn-aws-lambda-from-scratch-d29d?af=6p5abz)
+- [Learn AWS Serverless Application Model (AWS SAM) from scratch](https://egghead.io/playlists/learn-aws-serverless-application-model-aws-sam-framework-from-scratch-baf9?af=6p5abz)
+- [Learn DynamoDB from scratch (currently work in progress)](https://egghead.io/playlists/learn-aws-dynamodb-from-scratch-21c3)
+- [Chris Bascardi](https://egghead.io/instructors/chris-biscardi?af=6p5abz) has an excellent collection of AWS resources as well, take a look a this [Intro to DynamoDB](https://egghead.io/playlists/intro-to-dynamodb-f35a?af=6p5abz) collection.
 
 My own notes: https://gist.github.com/tlakomy/f1312ec1fd092ece75a0f72403235fc8
+
+## What do I do now?
+
+Open the `docs` directory and take a look at [before_we_start.md](docs/before_we_start.md)

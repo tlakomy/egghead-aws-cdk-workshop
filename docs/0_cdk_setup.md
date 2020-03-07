@@ -51,7 +51,7 @@ The only thing you **need** to import is the `@aws-cdk/core` part. The rest of i
 
 For instance - if you're going to create an S3 bucket, you'd import:
 
-```
+```js
 import * as s3 from "@aws-cdk/aws-s3";
 ```
 
@@ -59,10 +59,10 @@ Next, we're creating a new class which extends from `cdk.Stack`. Inside of it, w
 
 In this example, we see that our stack is going to create an SQS Queue and SNS Topic (again, you don't _have_ to know what they are, just that they are going to be created).
 
-```
+```js
 const queue = new sqs.Queue(this, "TestCdkQueue", {
-            visibilityTimeout: cdk.Duration.seconds(300)
-        });
+  visibilityTimeout: cdk.Duration.seconds(300)
+});
 
 const topic = new sns.Topic(this, "TestCdkTopic");
 ```
@@ -92,27 +92,27 @@ Every construct takes 3 arguments:
 0. Run `npm run watch` in order to start a TypeScript compiler in `watch` mode
 1. Run `cdk synth` in order to generate a CloudFormation template from our sample stack.
 
-   Which one would you prefer to maintain?
+   _Which one would you prefer to maintain?_
 
 1. Run `cdk deploy` in order to deploy our stack to AWS (you might need to run `cdk bootstrap` to initialize necessary helper resources, used internally by CDK).
 
-   What kind of info do we see before we deploy?
+   _What kind of info do we see before we deploy?_
 
-   Is it possible to deploy stuff we don't want by accident?
+   _Is it possible to deploy stuff we don't want by accident?_
 
 1. Log in to AWS Console and take a look at our stack in CloudFormation.
 
-   How can we see what the heck did we just deploy?
+   _How can we see what the heck did we just deploy?_
 
 1. Delete the `sqs.Queue` and `sns.Topic` in `todo-app-stack.ts`, we won't need them no more. Run `cdk diff` to see the difference between currently deployed stack and our local version.
 
-   What's going to happen to our resources once we run `cdk deploy` again?
+   _What's going to happen to our resources once we run `cdk deploy` again?_
 
 1. Run `cdk deploy` again and check out the result in CloudFormation console
 
 ## References
 
-https://aws.amazon.com/cdk/
-https://docs.aws.amazon.com/cdk/latest/guide/home.html
-https://github.com/eladb/awesome-cdk
-https://github.com/cdk-patterns/serverless
+- https://aws.amazon.com/cdk/
+- https://docs.aws.amazon.com/cdk/latest/guide/home.html
+- https://github.com/eladb/awesome-cdk
+- https://github.com/cdk-patterns/serverless
