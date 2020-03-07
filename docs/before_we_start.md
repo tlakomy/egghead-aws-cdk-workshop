@@ -41,4 +41,6 @@ One more thing:
 
 ## Let's keep it interactive
 
-We're going to spend the next 4 hours together - let's have fun, feel free to ask questions whenever something is not clear :) There will be quite a lot of time for that, due to the fact that we'll provision resources in AWS which sometimes can take a couple of minutes.
+We're going to spend the next 4 hours together - let's have fun, feel free to ask questions whenever something is not clear :)
+
+There will be quite a lot of time for that, due to the fact that we'll provision resources in AWS which sometimes can take a couple of minutes.

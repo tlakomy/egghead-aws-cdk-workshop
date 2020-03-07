@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import * as cdk from "@aws-cdk/core";
-import { TodoAppStack } from "../lesson_00/lib/todo-app-stack"; // Change the lesson number here at a beginning of each lesson
+// Change the lesson number here at a beginning of each lesson
+import { TodoAppStack } from "../lesson_00/lib/todo-app-stack";
 
 const app = new cdk.App();
 new TodoAppStack(app, "TodoAppStack");
