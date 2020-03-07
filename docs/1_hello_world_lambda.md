@@ -72,3 +72,9 @@ const helloLambda = new lambda.Function(this, "HelloLambda", {
 5. Test the function using AWS Lambda Console.
 
    _What happens if we change the implementation of the function in Console and then redeploy?_
+
+## What we've learned so far:
+
+- WTF is an AWS Lambda function
+- How to create a new lambda function with AWS CDK
+- How to test a newly deployed lambda function in AWS Console
