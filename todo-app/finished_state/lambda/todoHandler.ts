@@ -9,7 +9,7 @@ const createResponse = (
     return {
         statusCode,
         headers: {
-            "Content-Type": "text/plain",
+            // "Content-Type": "text/plain", -- check if we need to provide the content-type
             "Access-Control-Allow-Origin": "*", // Required for CORS support to work
             "Access-Control-Allow-Methods": "GET, POST, DELETE, OPTIONS"
         },
