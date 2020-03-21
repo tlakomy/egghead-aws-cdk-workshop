@@ -53,6 +53,8 @@ const helloLambda = new lambda.Function(this, "HelloLambda", {
 });
 ```
 
+(BTW: we can also use a `NodeJsFunction`: https://docs.aws.amazon.com/cdk/api/latest/docs/@aws-cdk_aws-lambda-nodejs.NodejsFunction.html)
+
 ## Exercises
 
 1. Run `cdk diff` to see what is going to be deployed
