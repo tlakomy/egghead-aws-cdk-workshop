@@ -48,6 +48,5 @@ _Do you know what's may cause the error?_
 
 ## What we've learned in this section:
 
-- Scanning a DynamoDB table using aws-cdk
-- Debugging permission issues using CloudWatch logs
-- Granting DynamoDB read/write priviledges to a lambda function (with a single line of code, holy crap)
+- Creating a lambda function that is able to scan a DynamoDB table using `aws-cdk`
+- Exposing a lambda function from a construct to be used in another one (like we did with the `handler` function)
