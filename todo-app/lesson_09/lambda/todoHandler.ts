@@ -25,13 +25,36 @@ const getAllTodos = async () => {
 };
 
 const addTodoItem = async (data: { todo: string; id: string }) => {
-    // Implement me!
-    // Remember about https://github.com/dabit3/dynamodb-documentclient-cheat-sheet
+    const { id, todo } = data;
+    if (todo && todo !== "") {
+        await dynamo
+            .put({
+                TableName: tableName,
+                Item: {
+                    id: "123",
+                    todo
+                }
+            })
+            .promise();
+    }
+    return todo;
 };
 
 const deleteTodoItem = async (data: { id: string }) => {
-    // Implement me!
-    // Remember about https://github.com/dabit3/dynamodb-documentclient-cheat-sheet
+    const { id } = data;
+
+    if (id && id !== "") {
+        await dynamo
+            .delete({
+                TableName: tableName,
+                Key: {
+                    id
+                }
+            })
+            .promise();
+    }
+
+    return id;
 };
 
 exports.handler = async function(event: AWSLambda.APIGatewayEvent) {
