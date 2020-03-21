@@ -53,7 +53,7 @@ During this course we're going to talk quite a bit about AWS Lambda, DynamoDB an
 
 - [Learn AWS Lambda from scratch](https://egghead.io/playlists/learn-aws-lambda-from-scratch-d29d?af=6p5abz)
 - [Learn AWS Serverless Application Model (AWS SAM) from scratch](https://egghead.io/playlists/learn-aws-serverless-application-model-aws-sam-framework-from-scratch-baf9?af=6p5abz)
-- [Learn DynamoDB from scratch (currently work in progress)](https://egghead.io/playlists/learn-aws-dynamodb-from-scratch-21c3)
+- [Learn DynamoDB from scratch (currently work in progress)](https://egghead.io/playlists/learn-aws-dynamodb-from-scratch-21c3?af=6p5abz)
 - [Chris Bascardi](https://egghead.io/instructors/chris-biscardi?af=6p5abz) has an excellent collection of AWS resources as well, take a look a this [Intro to DynamoDB](https://egghead.io/playlists/intro-to-dynamodb-f35a?af=6p5abz) collection.
 
 My own notes: https://gist.github.com/tlakomy/f1312ec1fd092ece75a0f72403235fc8

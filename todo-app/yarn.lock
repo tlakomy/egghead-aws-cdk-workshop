@@ -2,528 +2,626 @@
 # yarn lockfile v1
 
 
-"@aws-cdk/assert@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/assert/-/assert-1.27.0.tgz#228768b99399a288efaca82b46bf4813987a8c0f"
-  integrity sha1-IodouZOZoojvrKgrRr9IE5h6jA8=
+"@aws-cdk/assert@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/assert/-/assert-1.30.0.tgz#2e382e54a5cd72f672a1a779b0da13ba2dac0dec"
+  integrity sha1-LjguVKXNcvZyoad5sNoTui2sDew=
   dependencies:
-    "@aws-cdk/cloudformation-diff" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/cx-api" "1.27.0"
+    "@aws-cdk/cloudformation-diff" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/assets@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/assets/-/assets-1.27.0.tgz#6eb5c32119781304a63a7b9c6de89ceaff0051a0"
-  integrity sha1-brXDIRl4EwSmOnucbeic6v8AUaA=
+"@aws-cdk/assets@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/assets/-/assets-1.30.0.tgz#d631c4d7242c54ca7a4192d0b8fbd1ec2bdb3c57"
+  integrity sha1-1jHE1yQsVMp6QZLQuPvR7CvbPFc=
   dependencies:
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/cx-api" "1.27.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    constructs "^1.1.2"
     minimatch "^3.0.4"
 
-"@aws-cdk/aws-amplify@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-amplify/-/aws-amplify-1.27.0.tgz#89ace0158f2ee626c113b159a0a0a5462baee3d1"
-  integrity sha1-iazgFY8u5ibBE7FZoKClRiuu49E=
+"@aws-cdk/aws-amplify@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-amplify/-/aws-amplify-1.30.0.tgz#453dccfd4e4aa950f2aff2835b7e6e7ce28fbcf8"
+  integrity sha1-RT3M/U5KqVDyr/KDW35ufOKPvPg=
   dependencies:
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-codebuild" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-kms" "1.30.0"
+    "@aws-cdk/aws-secretsmanager" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-apigateway@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-apigateway/-/aws-apigateway-1.27.0.tgz#fbf622d093a58e6179870191b46128c8344ee349"
-  integrity sha1-+/Yi0JOljmF5hwGRtGEoyDRO40k=
+"@aws-cdk/aws-apigateway@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-apigateway/-/aws-apigateway-1.30.0.tgz#4226b41a44f4e8022e2f8a18eb07cb5516150fa2"
+  integrity sha1-Qia0GkT06AIuL4oY6wfLVRYVD6I=
   dependencies:
-    "@aws-cdk/aws-certificatemanager" "1.27.0"
-    "@aws-cdk/aws-ec2" "1.27.0"
-    "@aws-cdk/aws-elasticloadbalancingv2" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-certificatemanager" "1.30.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-elasticloadbalancingv2" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-applicationautoscaling@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-applicationautoscaling/-/aws-applicationautoscaling-1.27.0.tgz#092e994c765f133cf1fe738f36b6880447453d7f"
-  integrity sha1-CS6ZTHZfEzzx/nOPNraIBEdFPX8=
+"@aws-cdk/aws-applicationautoscaling@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-applicationautoscaling/-/aws-applicationautoscaling-1.30.0.tgz#b15a8435dfeccd4ab4c91cfd93c9c474274c6ede"
+  integrity sha1-sVqENd/szUq0yRz9k8nEdCdMbt4=
   dependencies:
-    "@aws-cdk/aws-autoscaling-common" "1.27.0"
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-autoscaling-common" "1.30.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-autoscaling-common@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-autoscaling-common/-/aws-autoscaling-common-1.27.0.tgz#0e15e9e3c11758e73a9300cdb1a8006874f355be"
-  integrity sha1-DhXp48EXWOc6kwDNsagAaHTzVb4=
+"@aws-cdk/aws-autoscaling-common@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-autoscaling-common/-/aws-autoscaling-common-1.30.0.tgz#875038b0589797c0661d9409db56c04bf6f6b48a"
+  integrity sha1-h1A4sFiXl8BmHZQJ21bAS/b2tIo=
   dependencies:
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-autoscaling-hooktargets@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-autoscaling-hooktargets/-/aws-autoscaling-hooktargets-1.27.0.tgz#6d7b705a15ed7ea84055ece2c2b1d4aebc11c87b"
-  integrity sha1-bXtwWhXtfqhAVeziwrHUrrwRyHs=
+"@aws-cdk/aws-autoscaling-hooktargets@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-autoscaling-hooktargets/-/aws-autoscaling-hooktargets-1.30.0.tgz#ead8db3574d75ee9f8122b9101ece10c4ebdba07"
+  integrity sha1-6tjbNXTXXun4EiuRAezhDE69ugc=
   dependencies:
-    "@aws-cdk/aws-autoscaling" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-sns" "1.27.0"
-    "@aws-cdk/aws-sns-subscriptions" "1.27.0"
-    "@aws-cdk/aws-sqs" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-autoscaling" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-sns" "1.30.0"
+    "@aws-cdk/aws-sns-subscriptions" "1.30.0"
+    "@aws-cdk/aws-sqs" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-autoscaling@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-autoscaling/-/aws-autoscaling-1.27.0.tgz#5973526c850686648132b4e6d9ea5d00a8517ab5"
-  integrity sha1-WXNSbIUGhmSBMrTm2epdAKhRerU=
+"@aws-cdk/aws-autoscaling@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-autoscaling/-/aws-autoscaling-1.30.0.tgz#a7393caf6495cafd91166962fa56493e9b6ed059"
+  integrity sha1-pzk8r2SVyv2RFmli+lZJPptu0Fk=
   dependencies:
-    "@aws-cdk/aws-autoscaling-common" "1.27.0"
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-ec2" "1.27.0"
-    "@aws-cdk/aws-elasticloadbalancing" "1.27.0"
-    "@aws-cdk/aws-elasticloadbalancingv2" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-sns" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-autoscaling-common" "1.30.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-elasticloadbalancing" "1.30.0"
+    "@aws-cdk/aws-elasticloadbalancingv2" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-sns" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-certificatemanager@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-certificatemanager/-/aws-certificatemanager-1.27.0.tgz#c506a8f516b81ebefab4d2699553eaa45d652eba"
-  integrity sha1-xQao9Ra4Hr76tNJplVPqpF1lLro=
+"@aws-cdk/aws-batch@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-batch/-/aws-batch-1.30.0.tgz#82119dbb0464ea658acdd0d58cc45209bcab61c2"
+  integrity sha1-ghGduwRk6mWKzdDVjMRSCbyrYcI=
   dependencies:
-    "@aws-cdk/aws-cloudformation" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-route53" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-ecr" "1.30.0"
+    "@aws-cdk/aws-ecs" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-cloudformation@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-cloudformation/-/aws-cloudformation-1.27.0.tgz#cbf2f2ccd56bfadd6dd2171104f07476987941e5"
-  integrity sha1-y/LyzNVr+t1t0hcRBPB0dph5QeU=
+"@aws-cdk/aws-certificatemanager@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-certificatemanager/-/aws-certificatemanager-1.30.0.tgz#1248df3d197c4e0232f3e0d629e9aaee721ab204"
+  integrity sha1-EkjfPRl8TgIy8+DWKemq7nIasgQ=
   dependencies:
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/aws-sns" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/cx-api" "1.27.0"
+    "@aws-cdk/aws-cloudformation" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-route53" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-cloudfront@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-cloudfront/-/aws-cloudfront-1.27.0.tgz#bb0a72cf231ef5601bf25d3f5a1c89b4273eb44e"
-  integrity sha1-uwpyzyMe9WAb8l0/WhyJtCc+tE4=
+"@aws-cdk/aws-cloudformation@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-cloudformation/-/aws-cloudformation-1.30.0.tgz#f6b6401fbeee15a6bf936b10c8056c1212f4e41d"
+  integrity sha1-9rZAH77uFaa/k2sQyAVsEhL05B0=
   dependencies:
-    "@aws-cdk/aws-certificatemanager" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-kms" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/aws-sns" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-cloudwatch@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-cloudwatch/-/aws-cloudwatch-1.27.0.tgz#01a908b245e9626fae9344ed106ac0b15133b6cf"
-  integrity sha1-AakIskXpYm+uk0TtEGrAsVEzts8=
+"@aws-cdk/aws-cloudfront@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-cloudfront/-/aws-cloudfront-1.30.0.tgz#190fbf32624eab62e16bf2e45ffd6ecdeb41c060"
+  integrity sha1-GQ+/MmJOq2Lha/LkX/1uzetBwGA=
   dependencies:
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-certificatemanager" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-kms" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-dynamodb@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-dynamodb/-/aws-dynamodb-1.27.0.tgz#7bbee650eb38c926d8c1d3c4f2fd7f1ae2842287"
-  integrity sha1-e77mUOs4ySbYwdPE8v1/GuKEIoc=
+"@aws-cdk/aws-cloudwatch@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-cloudwatch/-/aws-cloudwatch-1.30.0.tgz#52f9fa5595ce290efc66f0d1306c5935a9dcf1be"
+  integrity sha1-Uvn6VZXOKQ78ZvDRMGxZNanc8b4=
   dependencies:
-    "@aws-cdk/aws-applicationautoscaling" "1.27.0"
-    "@aws-cdk/aws-cloudformation" "1.27.0"
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/custom-resources" "1.27.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-ec2@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-ec2/-/aws-ec2-1.27.0.tgz#e2bf5763d371683f4846b9c3cfeda7ec04e9d365"
-  integrity sha1-4r9XY9NxaD9IRrnDz+2n7ATp02U=
+"@aws-cdk/aws-codebuild@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-codebuild/-/aws-codebuild-1.30.0.tgz#0936d70841aa366cfa1b43d142d8e2b26c160c0e"
+  integrity sha1-CTbXCEGqNmz6G0PRQtjismwWDA4=
   dependencies:
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-logs" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/aws-ssm" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/cx-api" "1.27.0"
+    "@aws-cdk/assets" "1.30.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-codecommit" "1.30.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-ecr" "1.30.0"
+    "@aws-cdk/aws-ecr-assets" "1.30.0"
+    "@aws-cdk/aws-events" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-kms" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/aws-s3-assets" "1.30.0"
+    "@aws-cdk/aws-secretsmanager" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-ecr-assets@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-ecr-assets/-/aws-ecr-assets-1.27.0.tgz#0fe68366eed71ff67ed1292c46ca30ea5393071b"
-  integrity sha1-D+aDZu7XH/Z+0SksRsow6lOTBxs=
+"@aws-cdk/aws-codecommit@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-codecommit/-/aws-codecommit-1.30.0.tgz#ae8d4f817156fe0190bcd25d3387bee6c8c25bf0"
+  integrity sha1-ro1PgXFW/gGQvNJdM4e+5sjCW/A=
   dependencies:
-    "@aws-cdk/assets" "1.27.0"
-    "@aws-cdk/aws-cloudformation" "1.27.0"
-    "@aws-cdk/aws-ecr" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/cx-api" "1.27.0"
+    "@aws-cdk/aws-events" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
+
+"@aws-cdk/aws-dynamodb@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-dynamodb/-/aws-dynamodb-1.30.0.tgz#e12aa2bac27b3ff771da77e5f4c0e4f858fcdc17"
+  integrity sha1-4SqiusJ7P/dx2nfl9MDk+Fj83Bc=
+  dependencies:
+    "@aws-cdk/aws-applicationautoscaling" "1.30.0"
+    "@aws-cdk/aws-cloudformation" "1.30.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/custom-resources" "1.30.0"
+    constructs "^1.1.2"
+
+"@aws-cdk/aws-ec2@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-ec2/-/aws-ec2-1.30.0.tgz#6603ba2ef08c457a11b833fe64c673e150cdf642"
+  integrity sha1-ZgO6LvCMRXoRuDP+ZMZz4VDN9kI=
+  dependencies:
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-logs" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/aws-ssm" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    constructs "^1.1.2"
+
+"@aws-cdk/aws-ecr-assets@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-ecr-assets/-/aws-ecr-assets-1.30.0.tgz#58816f365e04752706bf0884681373f29e9ef855"
+  integrity sha1-WIFvNl4EdScGvwiEaBNz8p6e+FU=
+  dependencies:
+    "@aws-cdk/assets" "1.30.0"
+    "@aws-cdk/aws-cloudformation" "1.30.0"
+    "@aws-cdk/aws-ecr" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    constructs "^1.1.2"
     minimatch "^3.0.4"
 
-"@aws-cdk/aws-ecr@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-ecr/-/aws-ecr-1.27.0.tgz#89439343ab852efe8e2d977d34cd681aa6070020"
-  integrity sha1-iUOTQ6uFLv6OLZd9NM1oGqYHACA=
+"@aws-cdk/aws-ecr@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-ecr/-/aws-ecr-1.30.0.tgz#70ea465c4d22c0f06d50a0ace694538c09d94c77"
+  integrity sha1-cOpGXE0iwPBtUKCs5pRTjAnZTHc=
   dependencies:
-    "@aws-cdk/aws-events" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-events" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-ecs@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-ecs/-/aws-ecs-1.27.0.tgz#8377e414916e63ce35ab7c18d3560bca413a3062"
-  integrity sha1-g3fkFJFuY841q3wY01YLykE6MGI=
+"@aws-cdk/aws-ecs@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-ecs/-/aws-ecs-1.30.0.tgz#51c9c9eb5324cd1f5993eb30aca8893c8d9346aa"
+  integrity sha1-UcnJ61MkzR9Zk+swrKiJPI2TRqo=
   dependencies:
-    "@aws-cdk/aws-applicationautoscaling" "1.27.0"
-    "@aws-cdk/aws-autoscaling" "1.27.0"
-    "@aws-cdk/aws-autoscaling-hooktargets" "1.27.0"
-    "@aws-cdk/aws-certificatemanager" "1.27.0"
-    "@aws-cdk/aws-cloudformation" "1.27.0"
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-ec2" "1.27.0"
-    "@aws-cdk/aws-ecr" "1.27.0"
-    "@aws-cdk/aws-ecr-assets" "1.27.0"
-    "@aws-cdk/aws-elasticloadbalancing" "1.27.0"
-    "@aws-cdk/aws-elasticloadbalancingv2" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-logs" "1.27.0"
-    "@aws-cdk/aws-route53" "1.27.0"
-    "@aws-cdk/aws-route53-targets" "1.27.0"
-    "@aws-cdk/aws-secretsmanager" "1.27.0"
-    "@aws-cdk/aws-servicediscovery" "1.27.0"
-    "@aws-cdk/aws-sns" "1.27.0"
-    "@aws-cdk/aws-sqs" "1.27.0"
-    "@aws-cdk/aws-ssm" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/cx-api" "1.27.0"
+    "@aws-cdk/aws-applicationautoscaling" "1.30.0"
+    "@aws-cdk/aws-autoscaling" "1.30.0"
+    "@aws-cdk/aws-autoscaling-hooktargets" "1.30.0"
+    "@aws-cdk/aws-certificatemanager" "1.30.0"
+    "@aws-cdk/aws-cloudformation" "1.30.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-ecr" "1.30.0"
+    "@aws-cdk/aws-ecr-assets" "1.30.0"
+    "@aws-cdk/aws-elasticloadbalancing" "1.30.0"
+    "@aws-cdk/aws-elasticloadbalancingv2" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-logs" "1.30.0"
+    "@aws-cdk/aws-route53" "1.30.0"
+    "@aws-cdk/aws-route53-targets" "1.30.0"
+    "@aws-cdk/aws-secretsmanager" "1.30.0"
+    "@aws-cdk/aws-servicediscovery" "1.30.0"
+    "@aws-cdk/aws-sns" "1.30.0"
+    "@aws-cdk/aws-sqs" "1.30.0"
+    "@aws-cdk/aws-ssm" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-elasticloadbalancing@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-elasticloadbalancing/-/aws-elasticloadbalancing-1.27.0.tgz#6075ab83d65169a014b044beba1a57630f3fe362"
-  integrity sha1-YHWrg9ZRaaAUsES+uhpXYw8/42I=
+"@aws-cdk/aws-elasticloadbalancing@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-elasticloadbalancing/-/aws-elasticloadbalancing-1.30.0.tgz#17f4761beb57cd487b8029593394992279823898"
+  integrity sha1-F/R2G+tXzUh7gClZM5SZInmCOJg=
   dependencies:
-    "@aws-cdk/aws-ec2" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-elasticloadbalancingv2@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-elasticloadbalancingv2/-/aws-elasticloadbalancingv2-1.27.0.tgz#f34dbf3c7ac6e3935b1b8add72f5bbb687c61481"
-  integrity sha1-802/PHrG45NbG4rdcvW7tofGFIE=
+"@aws-cdk/aws-elasticloadbalancingv2@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-elasticloadbalancingv2/-/aws-elasticloadbalancingv2-1.30.0.tgz#6b190de8e81ae2ac4f57c537c681495d30d62471"
+  integrity sha1-axkN6Oga4qxPV8U3xoFJXTDWJHE=
   dependencies:
-    "@aws-cdk/aws-certificatemanager" "1.27.0"
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-ec2" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-certificatemanager" "1.30.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-events@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-events/-/aws-events-1.27.0.tgz#3bf958adaf81d44e63972534e9b328be813fe903"
-  integrity sha1-O/lYra+B1E5jlyU06bMovoE/6QM=
+"@aws-cdk/aws-events@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-events/-/aws-events-1.30.0.tgz#73ded125b38831f401ceda10ce6187665f803a11"
+  integrity sha1-c97RJbOIMfQBztoQzmGHZl+AOhE=
   dependencies:
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-glue@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-glue/-/aws-glue-1.27.0.tgz#5388b82c7e6000971cc56dfeced6a11147a33135"
-  integrity sha1-U4i4LH5gAJccxW3+ztahEUejMTU=
+"@aws-cdk/aws-glue@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-glue/-/aws-glue-1.30.0.tgz#30fc09382ccfebfffaf17f457b569c5e6777eea9"
+  integrity sha1-MPwJOCzP6//68X9Fe1acXmd37qk=
   dependencies:
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-kms" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-kms" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-iam@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-iam/-/aws-iam-1.27.0.tgz#3e88098b3c0f732bf51c326440fa8f1a3bf3231d"
-  integrity sha1-PogJizwPcyv1HDJkQPqPGjvzIx0=
+"@aws-cdk/aws-iam@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-iam/-/aws-iam-1.30.0.tgz#de72d6d75a71b860ba2b50ba98d47e89b95e241f"
+  integrity sha1-3nLW11pxuGC6K1C6mNR+ibleJB8=
   dependencies:
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/region-info" "1.27.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/region-info" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-kms@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-kms/-/aws-kms-1.27.0.tgz#6df493072de4e21e1b91898a8e1a3b244c36b894"
-  integrity sha1-bfSTBy3k4h4bkYmKjho7JEw2uJQ=
+"@aws-cdk/aws-kms@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-kms/-/aws-kms-1.30.0.tgz#aa0abeb2808d4cb7056f76ec9ae16ce59c5146d4"
+  integrity sha1-qgq+soCNTLcFb3bsmuFs5ZxRRtQ=
   dependencies:
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-lambda@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-lambda/-/aws-lambda-1.27.0.tgz#5b4cbfe65a4b074a2ed9ed3e988d1eddb4d96a03"
-  integrity sha1-W0y/5lpLB0ou2e0+mI0e3bTZagM=
+"@aws-cdk/aws-lambda@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-lambda/-/aws-lambda-1.30.0.tgz#733e4267dd32ae8563b27df7c6044aa8591e8e49"
+  integrity sha1-cz5CZ90yroVjsn33xgRKqFkejkk=
   dependencies:
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-ec2" "1.27.0"
-    "@aws-cdk/aws-events" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-logs" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/aws-s3-assets" "1.27.0"
-    "@aws-cdk/aws-sqs" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/cx-api" "1.27.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-events" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-logs" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/aws-s3-assets" "1.30.0"
+    "@aws-cdk/aws-sqs" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-logs@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-logs/-/aws-logs-1.27.0.tgz#97479b9f274b03f1cc2ce22598bf037d4ca24e5a"
-  integrity sha1-l0ebnydLA/HMLOIlmL8DfUyiTlo=
+"@aws-cdk/aws-logs@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-logs/-/aws-logs-1.30.0.tgz#53b89228c6e024d095bff96fa80e8e62e28688d2"
+  integrity sha1-U7iSKMbgJNCVv/lvqA6OYuKGiNI=
   dependencies:
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-route53-patterns@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-route53-patterns/-/aws-route53-patterns-1.27.0.tgz#a13385e0427cd8e0f8244c6ea0817b45091fbc1a"
-  integrity sha1-oTOF4EJ82OD4JExuoIF7RQkfvBo=
+"@aws-cdk/aws-route53-patterns@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-route53-patterns/-/aws-route53-patterns-1.30.0.tgz#26495fc2baf2193f3de76503751d468d02f648ec"
+  integrity sha1-JklfwrryGT8952UDdR1GjQL2SOw=
   dependencies:
-    "@aws-cdk/aws-certificatemanager" "1.27.0"
-    "@aws-cdk/aws-cloudfront" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-route53" "1.27.0"
-    "@aws-cdk/aws-route53-targets" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/region-info" "1.27.0"
+    "@aws-cdk/aws-certificatemanager" "1.30.0"
+    "@aws-cdk/aws-cloudfront" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-route53" "1.30.0"
+    "@aws-cdk/aws-route53-targets" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/region-info" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-route53-targets@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-route53-targets/-/aws-route53-targets-1.27.0.tgz#fe48f1317b7a633ae4cdc77027036b619f7b17a0"
-  integrity sha1-/kjxMXt6YzrkzcdwJwNrYZ97F6A=
+"@aws-cdk/aws-route53-targets@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-route53-targets/-/aws-route53-targets-1.30.0.tgz#e1d5250e822add59d780497ec44d7f020a6d0f00"
+  integrity sha1-4dUlDoIq3VnXgEl+xE1/AgptDwA=
   dependencies:
-    "@aws-cdk/aws-apigateway" "1.27.0"
-    "@aws-cdk/aws-cloudfront" "1.27.0"
-    "@aws-cdk/aws-ec2" "1.27.0"
-    "@aws-cdk/aws-elasticloadbalancing" "1.27.0"
-    "@aws-cdk/aws-elasticloadbalancingv2" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-route53" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/region-info" "1.27.0"
+    "@aws-cdk/aws-apigateway" "1.30.0"
+    "@aws-cdk/aws-cloudfront" "1.30.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-elasticloadbalancing" "1.30.0"
+    "@aws-cdk/aws-elasticloadbalancingv2" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-route53" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/region-info" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-route53@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-route53/-/aws-route53-1.27.0.tgz#b754375b59c2514b63f6ddbe4660e2cbdf1faf3d"
-  integrity sha1-t1Q3W1nCUUtj9t2+RmDiy98frz0=
+"@aws-cdk/aws-route53@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-route53/-/aws-route53-1.30.0.tgz#a76fb8f71bd7c6710ff6515dae006fd647e8435a"
+  integrity sha1-p2+49xvXxnEP9lFdrgBv1kfoQ1o=
   dependencies:
-    "@aws-cdk/aws-ec2" "1.27.0"
-    "@aws-cdk/aws-logs" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/cx-api" "1.27.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-logs" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-s3-assets@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-s3-assets/-/aws-s3-assets-1.27.0.tgz#f95577c67332485657960bfe523c80424850dc22"
-  integrity sha1-+VV3xnMySFZXlgv+UjyAQkhQ3CI=
+"@aws-cdk/aws-s3-assets@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-s3-assets/-/aws-s3-assets-1.30.0.tgz#d84ab5457d030f4fc07e145eaaf29cbb575081a7"
+  integrity sha1-2Eq1RX0DD0/AfhReqvKcu1dQgac=
   dependencies:
-    "@aws-cdk/assets" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/cx-api" "1.27.0"
+    "@aws-cdk/assets" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-s3-deployment@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-s3-deployment/-/aws-s3-deployment-1.27.0.tgz#7b7f0d5d7ff2414d986b57e991714d9de1ebb9fd"
-  integrity sha1-e38NXX/yQU2Ya1fpkXFNneHruf0=
+"@aws-cdk/aws-s3-deployment@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-s3-deployment/-/aws-s3-deployment-1.30.0.tgz#ebeacaa9584ae59ad402beb3bba99f40686d0a03"
+  integrity sha1-6+rKqVhK5ZrUAr6zu6mfQGhtCgM=
   dependencies:
-    "@aws-cdk/aws-cloudformation" "1.27.0"
-    "@aws-cdk/aws-cloudfront" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/aws-s3-assets" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-cloudformation" "1.30.0"
+    "@aws-cdk/aws-cloudfront" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/aws-s3-assets" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-s3-notifications@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-s3-notifications/-/aws-s3-notifications-1.27.0.tgz#dc3393b6f8c2a01e8086a0d0370da04e3afb25f4"
-  integrity sha1-3DOTtvjCoB6AhqDQNw2gTjr7JfQ=
+"@aws-cdk/aws-s3-notifications@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-s3-notifications/-/aws-s3-notifications-1.30.0.tgz#db7c6d67314d8196a9be6fb9714516966249279e"
+  integrity sha1-23xtZzFNgZapvm+5cUUWlmJJJ54=
   dependencies:
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/aws-sns" "1.27.0"
-    "@aws-cdk/aws-sqs" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/aws-sns" "1.30.0"
+    "@aws-cdk/aws-sqs" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-s3@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-s3/-/aws-s3-1.27.0.tgz#371f75b3248f38aa91dfe016da9299cc1eab9370"
-  integrity sha1-Nx91sySPOKqR3+AW2pKZzB6rk3A=
+"@aws-cdk/aws-s3@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-s3/-/aws-s3-1.30.0.tgz#8b9902583c16398e9fcabc17eb0990c2f32895e3"
+  integrity sha1-i5kCWDwWOY6fyrwX6wmQwvMoleM=
   dependencies:
-    "@aws-cdk/aws-events" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-kms" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-events" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-kms" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-sam@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-sam/-/aws-sam-1.27.0.tgz#5039ad1e0d25be14e9759b73f109da46d65e81f9"
-  integrity sha1-UDmtHg0lvhTpdZtz8QnaRtZegfk=
+"@aws-cdk/aws-sam@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-sam/-/aws-sam-1.30.0.tgz#42c3cbfd905d50504012f85d69a4f98f985b4559"
+  integrity sha1-QsPL/ZBdUFBAEvhdaaT5j5hbRVk=
   dependencies:
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-secretsmanager@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-secretsmanager/-/aws-secretsmanager-1.27.0.tgz#aeb07823b107e3967dd9eeab0c991a1a304696bd"
-  integrity sha1-rrB4I7EH45Z92e6rDJkaGjBGlr0=
+"@aws-cdk/aws-secretsmanager@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-secretsmanager/-/aws-secretsmanager-1.30.0.tgz#caa2b369f30ace67e5f05a65493e82c701c3846b"
+  integrity sha1-yqKzafMKzmfl8FplST6CxwHDhGs=
   dependencies:
-    "@aws-cdk/aws-ec2" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-kms" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-sam" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-kms" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-sam" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-servicediscovery@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-servicediscovery/-/aws-servicediscovery-1.27.0.tgz#76cc1d7d43382beef20f40634836efc4562b4be9"
-  integrity sha1-dswdfUM4K+7yD0BjSDbvxFYrS+k=
+"@aws-cdk/aws-servicediscovery@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-servicediscovery/-/aws-servicediscovery-1.30.0.tgz#1761017964ab1dfc1a2e3337f0d410ecb84fafed"
+  integrity sha1-F2EBeWSrHfwaLjM38NQQ7LhPr+0=
   dependencies:
-    "@aws-cdk/aws-ec2" "1.27.0"
-    "@aws-cdk/aws-elasticloadbalancingv2" "1.27.0"
-    "@aws-cdk/aws-route53" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-elasticloadbalancingv2" "1.30.0"
+    "@aws-cdk/aws-route53" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-sns-subscriptions@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-sns-subscriptions/-/aws-sns-subscriptions-1.27.0.tgz#f474fab2d812a0b1eddb03e948b23f1a2b31adbe"
-  integrity sha1-9HT6stgSoLHt2wPpSLI/Gisxrb4=
+"@aws-cdk/aws-sns-subscriptions@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-sns-subscriptions/-/aws-sns-subscriptions-1.30.0.tgz#6eccae46053e669bf3e5ef8b7f4d272870a5e37b"
+  integrity sha1-bsyuRgU+Zpvz5e+Lf00nKHCl43s=
   dependencies:
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-sns" "1.27.0"
-    "@aws-cdk/aws-sqs" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-sns" "1.30.0"
+    "@aws-cdk/aws-sqs" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-sns@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-sns/-/aws-sns-1.27.0.tgz#9dbde054e16660d3d13cc6b7415db963a1a3aa3f"
-  integrity sha1-nb3gVOFmYNPRPMa3QV25Y6Gjqj8=
+"@aws-cdk/aws-sns@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-sns/-/aws-sns-1.30.0.tgz#501b6ca30d7aaaed517190870ca4979791c5a31c"
+  integrity sha1-UBtsow16qu1RcZCHDKSXl5HFoxw=
   dependencies:
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-events" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-kms" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-events" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-kms" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-sqs@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-sqs/-/aws-sqs-1.27.0.tgz#61146325e8c0f8dd97e5d5a49d6707fd8c3586e6"
-  integrity sha1-YRRjJejA+N2X5dWknWcH/Yw1huY=
+"@aws-cdk/aws-sqs@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-sqs/-/aws-sqs-1.30.0.tgz#d8bf494359d4d6eb8c13a87283ea58b4f2022df9"
+  integrity sha1-2L9JQ1nU1uuME6hyg+pYtPICLfk=
   dependencies:
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-kms" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-kms" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-ssm@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-ssm/-/aws-ssm-1.27.0.tgz#be486cbcb816de133c0705ed4ad86b8452a2fed2"
-  integrity sha1-vkhsvLgW3hM8BwXtSthrhFKi/tI=
+"@aws-cdk/aws-ssm@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-ssm/-/aws-ssm-1.30.0.tgz#40818506343902ef49c0138b5c68a7886656b626"
+  integrity sha1-QIGFBjQ5Au9JwBOLXGiniGZWtiY=
   dependencies:
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-kms" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
-    "@aws-cdk/cx-api" "1.27.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-kms" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-stepfunctions-tasks@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-stepfunctions-tasks/-/aws-stepfunctions-tasks-1.27.0.tgz#e68793c5c182758a87f5fb05edcf05f1a15a512a"
-  integrity sha1-5oeTxcGCdYqH9fsF7c8F8aFaUSo=
+"@aws-cdk/aws-stepfunctions-tasks@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-stepfunctions-tasks/-/aws-stepfunctions-tasks-1.30.0.tgz#577437bb3ea6362786893d489455ef7014691ebd"
+  integrity sha1-V3Q3uz6mNieGiT1IlFXvcBRpHr0=
   dependencies:
-    "@aws-cdk/assets" "1.27.0"
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-ec2" "1.27.0"
-    "@aws-cdk/aws-ecr" "1.27.0"
-    "@aws-cdk/aws-ecr-assets" "1.27.0"
-    "@aws-cdk/aws-ecs" "1.27.0"
-    "@aws-cdk/aws-glue" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-kms" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/aws-sns" "1.27.0"
-    "@aws-cdk/aws-sqs" "1.27.0"
-    "@aws-cdk/aws-stepfunctions" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/assets" "1.30.0"
+    "@aws-cdk/aws-batch" "1.30.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-ec2" "1.30.0"
+    "@aws-cdk/aws-ecr" "1.30.0"
+    "@aws-cdk/aws-ecr-assets" "1.30.0"
+    "@aws-cdk/aws-ecs" "1.30.0"
+    "@aws-cdk/aws-glue" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-kms" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/aws-sns" "1.30.0"
+    "@aws-cdk/aws-sqs" "1.30.0"
+    "@aws-cdk/aws-stepfunctions" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/aws-stepfunctions@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-stepfunctions/-/aws-stepfunctions-1.27.0.tgz#64bff25a3c25e44dcb70db78f2cd3e907fc98cfa"
-  integrity sha1-ZL/yWjwl5E3LcNt48s0+kH/JjPo=
+"@aws-cdk/aws-stepfunctions@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/aws-stepfunctions/-/aws-stepfunctions-1.30.0.tgz#6fb3fa18032ca307b2170083c16e8a3256d7f14e"
+  integrity sha1-b7P6GAMsoweyFwCDwW6KMlbX8U4=
   dependencies:
-    "@aws-cdk/aws-cloudwatch" "1.27.0"
-    "@aws-cdk/aws-events" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-cloudwatch" "1.30.0"
+    "@aws-cdk/aws-events" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/cfnspec@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/cfnspec/-/cfnspec-1.27.0.tgz#dc44b1330cde85a331504fa4872648adb9a93796"
-  integrity sha1-3ESxMwzehaMxUE+khyZIrbmpN5Y=
+"@aws-cdk/cdk-assets-schema@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/cdk-assets-schema/-/cdk-assets-schema-1.30.0.tgz#7f8cd84ecab66d13c3a74169bddbbce3f223638b"
+  integrity sha1-f4zYTsq2bRPDp0Fpvdu84/IjY4s=
+  dependencies:
+    semver "^7.1.3"
+
+"@aws-cdk/cfnspec@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/cfnspec/-/cfnspec-1.30.0.tgz#a5fd197780f980fecb8798c1734e363401569fd5"
+  integrity sha1-pf0Zd4D5gP7Lh5jBc042NAFWn9U=
   dependencies:
     md5 "^2.2.1"
 
-"@aws-cdk/cloudformation-diff@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/cloudformation-diff/-/cloudformation-diff-1.27.0.tgz#be122757eac88282f0319325cb411cfdd954b968"
-  integrity sha1-vhInV+rIgoLwMZMly0Ec/dlUuWg=
+"@aws-cdk/cloudformation-diff@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/cloudformation-diff/-/cloudformation-diff-1.30.0.tgz#f9f04d06440809a3fd714eb1d7d507f900aee71b"
+  integrity sha1-+fBNBkQICaP9cU6x19UH+QCu5xs=
   dependencies:
-    "@aws-cdk/cfnspec" "1.27.0"
+    "@aws-cdk/cfnspec" "1.30.0"
     colors "^1.4.0"
     diff "^4.0.2"
     fast-deep-equal "^3.1.1"
     string-width "^4.2.0"
     table "^5.4.6"
 
-"@aws-cdk/core@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/core/-/core-1.27.0.tgz#736a43953421b98244bad55e906b87ac34fe6a97"
-  integrity sha1-c2pDlTQhuYJEutVekGuHrDT+apc=
+"@aws-cdk/core@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/core/-/core-1.30.0.tgz#8a25779fe8d8319a6bf518d48a4e284e62af95b3"
+  integrity sha1-iiV3n+jYMZpr9RjUik4oTmKvlbM=
   dependencies:
-    "@aws-cdk/cx-api" "1.27.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/custom-resources@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/custom-resources/-/custom-resources-1.27.0.tgz#475d9538e6831dd6c757b1cb08e24dbc4c28b354"
-  integrity sha1-R12VOOaDHdbHV7HLCOJNvEwos1Q=
+"@aws-cdk/custom-resources@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/custom-resources/-/custom-resources-1.30.0.tgz#324f53afdf9fdb67bdf38ab1eb944878c3d21f90"
+  integrity sha1-Mk9Tr9+f22e984qx65RIeMPSH5A=
   dependencies:
-    "@aws-cdk/aws-cloudformation" "1.27.0"
-    "@aws-cdk/aws-iam" "1.27.0"
-    "@aws-cdk/aws-lambda" "1.27.0"
-    "@aws-cdk/aws-sns" "1.27.0"
-    "@aws-cdk/aws-stepfunctions" "1.27.0"
-    "@aws-cdk/aws-stepfunctions-tasks" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/aws-cloudformation" "1.30.0"
+    "@aws-cdk/aws-iam" "1.30.0"
+    "@aws-cdk/aws-lambda" "1.30.0"
+    "@aws-cdk/aws-logs" "1.30.0"
+    "@aws-cdk/aws-sns" "1.30.0"
+    "@aws-cdk/aws-stepfunctions" "1.30.0"
+    "@aws-cdk/aws-stepfunctions-tasks" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
+    constructs "^1.1.2"
 
-"@aws-cdk/cx-api@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/cx-api/-/cx-api-1.27.0.tgz#715068271a1bb60d0b3b015f54373e228458a9b8"
-  integrity sha1-cVBoJxobtg0LOwFfVDc+IoRYqbg=
+"@aws-cdk/cx-api@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/cx-api/-/cx-api-1.30.0.tgz#9fde2614efbf5b356c4f051ea79faeb00cdb0a21"
+  integrity sha1-n94mFO+/WzVsTwUep5+usAzbCiE=
   dependencies:
     semver "^7.1.3"
 
-"@aws-cdk/region-info@1.27.0":
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/region-info/-/region-info-1.27.0.tgz#c91334db22ca5e520b9b3ac8bc338b370932d3bc"
-  integrity sha1-yRM02yLKXlILmzrIvDOLNwky07w=
+"@aws-cdk/region-info@1.30.0":
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@aws-cdk/region-info/-/region-info-1.30.0.tgz#79931ca8b9fa8766cc560507ae85d3055fef6e8d"
+  integrity sha1-eZMcqLn6h2bMVgUHroXTBV/vbo0=
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.8.3":
   version "7.8.3"
@@ -621,12 +719,12 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.8.0"
 
-"@babel/runtime@^7.6.3":
-  version "7.8.4"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@babel/runtime/-/runtime-7.8.4.tgz#d79f5a2040f7caa24d53e563aad49cbc05581308"
-  integrity sha1-159aIED3yqJNU+VjqtScvAVYEwg=
+"@babel/runtime@^7.8.7":
+  version "7.9.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/@babel/runtime/-/runtime-7.9.0.tgz#337eda67401f5b066a6f205a3113d4ac18ba495b"
+  integrity sha1-M37aZ0AfWwZqbyBaMRPUrBi6SVs=
   dependencies:
-    regenerator-runtime "^0.13.2"
+    regenerator-runtime "^0.13.4"
 
 "@babel/template@^7.4.0", "@babel/template@^7.8.3", "@babel/template@^7.8.6":
   version "7.8.6"
@@ -1112,17 +1210,19 @@ atob@^2.1.2:
   resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
 
-aws-cdk@1.27.0:
-  version "1.27.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/aws-cdk/-/aws-cdk-1.27.0.tgz#9d6e48e57d0429e62e4af4cba5d6c64f6565c011"
-  integrity sha1-nW5I5X0EKeYuSvTLpdbGT2VlwBE=
+aws-cdk@1.30.0:
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/aws-cdk/-/aws-cdk-1.30.0.tgz#c1b54badd5a021e678ffa094df187c9d37bbb66d"
+  integrity sha1-wbVLrdWgIeZ4/6CU3xh8nTe7tm0=
   dependencies:
-    "@aws-cdk/cloudformation-diff" "1.27.0"
-    "@aws-cdk/cx-api" "1.27.0"
-    "@aws-cdk/region-info" "1.27.0"
+    "@aws-cdk/cdk-assets-schema" "1.30.0"
+    "@aws-cdk/cloudformation-diff" "1.30.0"
+    "@aws-cdk/cx-api" "1.30.0"
+    "@aws-cdk/region-info" "1.30.0"
     archiver "^3.1.1"
-    aws-sdk "^2.631.0"
+    aws-sdk "^2.640.0"
     camelcase "^5.3.1"
+    cdk-assets "1.30.0"
     colors "^1.4.0"
     decamelize "^4.0.0"
     fs-extra "^8.1.0"
@@ -1131,18 +1231,17 @@ aws-cdk@1.27.0:
     minimatch ">=3.0"
     promptly "^3.0.3"
     proxy-agent "^3.1.1"
-    request "^2.88.2"
     semver "^7.1.3"
     source-map-support "^0.5.16"
     table "^5.4.6"
-    uuid "^7.0.1"
-    yaml "^1.7.2"
-    yargs "^15.2.0"
+    uuid "^7.0.2"
+    yaml "^1.8.2"
+    yargs "^15.3.1"
 
-aws-sdk@^2.631.0:
-  version "2.633.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/aws-sdk/-/aws-sdk-2.633.0.tgz#3bdb8ec2671884025e9f64fdfa2c0af3cc663118"
-  integrity sha1-O9uOwmcYhAJen2T9+iwK88xmMRg=
+aws-sdk@^2.640.0:
+  version "2.643.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/aws-sdk/-/aws-sdk-2.643.0.tgz#0b4cc49165a25c42ab0503580806d367d32ffb88"
+  integrity sha1-C0zEkWWiXEKrBQNYCAbTZ9Mv+4g=
   dependencies:
     buffer "4.9.1"
     events "1.1.1"
@@ -1370,18 +1469,29 @@ caseless@~0.12.0:
   resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
 
-cdk-spa-deploy@0.7.4:
-  version "0.7.4"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/cdk-spa-deploy/-/cdk-spa-deploy-0.7.4.tgz#499b39be1fa1b665e379e0ec6ac08b797651e431"
-  integrity sha1-SZs5vh+htmXjeeDsasCLeXZR5DE=
+cdk-assets@1.30.0:
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/cdk-assets/-/cdk-assets-1.30.0.tgz#f48f8bf7d53ec4da9ecedab3c421995db5476b3c"
+  integrity sha1-9I+L99U+xNqeztqzxCGZXbVHazw=
   dependencies:
-    "@aws-cdk/aws-certificatemanager" "1.27.0"
-    "@aws-cdk/aws-cloudfront" "1.27.0"
-    "@aws-cdk/aws-route53-patterns" "1.27.0"
-    "@aws-cdk/aws-route53-targets" "1.27.0"
-    "@aws-cdk/aws-s3" "1.27.0"
-    "@aws-cdk/aws-s3-deployment" "1.27.0"
-    "@aws-cdk/core" "1.27.0"
+    "@aws-cdk/cdk-assets-schema" "1.30.0"
+    archiver "^3.1.1"
+    aws-sdk "^2.640.0"
+    glob "^7.1.6"
+    yargs "^15.3.1"
+
+cdk-spa-deploy@1.30.0:
+  version "1.30.0"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/cdk-spa-deploy/-/cdk-spa-deploy-1.30.0.tgz#41a2edb8efcef96d3ec0e2f910232213d19af64a"
+  integrity sha1-QaLtuO/O+W0+wOL5ECMiE9Ga9ko=
+  dependencies:
+    "@aws-cdk/aws-certificatemanager" "1.30.0"
+    "@aws-cdk/aws-cloudfront" "1.30.0"
+    "@aws-cdk/aws-route53-patterns" "1.30.0"
+    "@aws-cdk/aws-route53-targets" "1.30.0"
+    "@aws-cdk/aws-s3" "1.30.0"
+    "@aws-cdk/aws-s3-deployment" "1.30.0"
+    "@aws-cdk/core" "1.30.0"
 
 chalk@^2.0.0, chalk@^2.0.1, chalk@^2.4.2:
   version "2.4.2"
@@ -1505,6 +1615,11 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
+
+constructs@^1.1.2:
+  version "1.1.5"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/constructs/-/constructs-1.1.5.tgz#b028a934e9cf77e50b3a6e35522cf68dc982d92f"
+  integrity sha1-sCipNOnPd+ULOm41Uiz2jcmC2S8=
 
 convert-source-map@^1.4.0, convert-source-map@^1.7.0:
   version "1.7.0"
@@ -3714,10 +3829,10 @@ realpath-native@^1.1.0:
   dependencies:
     util.promisify "^1.0.0"
 
-regenerator-runtime@^0.13.2:
-  version "0.13.3"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
-  integrity sha1-fPanfY9cb2Drc8X8GVWyzrAea/U=
+regenerator-runtime@^0.13.4:
+  version "0.13.5"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/regenerator-runtime/-/regenerator-runtime-0.13.5.tgz#d878a1d094b4306d10b9096484b33ebd55e26697"
+  integrity sha1-2Hih0JS0MG0QuQlkhLM+vVXiZpc=
 
 regex-not@^1.0.0, regex-not@^1.0.2:
   version "1.0.2"
@@ -3758,7 +3873,7 @@ request-promise-native@^1.0.5:
     stealthy-require "^1.1.1"
     tough-cookie "^2.3.3"
 
-request@^2.87.0, request@^2.88.2:
+request@^2.87.0:
   version "2.88.2"
   resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/request/-/request-2.88.2.tgz#d73c918731cb5a87da047e207234146f664d12b3"
   integrity sha1-1zyRhzHLWofaBH4gcjQUb2ZNErM=
@@ -4455,7 +4570,7 @@ uuid@^3.3.2:
   resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
   integrity sha1-sj5DWK+oogL+ehAK8fX4g/AgB+4=
 
-uuid@^7.0.1:
+uuid@^7.0.2:
   version "7.0.2"
   resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/uuid/-/uuid-7.0.2.tgz#7ff5c203467e91f5e0d85cfcbaaf7d2ebbca9be6"
   integrity sha1-f/XCA0Z+kfXg2Fz8uq99LrvKm+Y=
@@ -4620,12 +4735,12 @@ yallist@^3.0.2:
   resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/yallist/-/yallist-3.1.1.tgz#dbb7daf9bfd8bac9ab45ebf602b8cbad0d5d08fd"
   integrity sha1-27fa+b/YusmrRev2ArjLrQ1dCP0=
 
-yaml@^1.7.2:
-  version "1.7.2"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/yaml/-/yaml-1.7.2.tgz#f26aabf738590ab61efaca502358e48dc9f348b2"
-  integrity sha1-8mqr9zhZCrYe+spQI1jkjcnzSLI=
+yaml@^1.8.2:
+  version "1.8.3"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/yaml/-/yaml-1.8.3.tgz#2f420fca58b68ce3a332d0ca64be1d191dd3f87a"
+  integrity sha1-L0IPyli2jOOjMtDKZL4dGR3T+Ho=
   dependencies:
-    "@babel/runtime" "^7.6.3"
+    "@babel/runtime" "^7.8.7"
 
 yargs-parser@10.x:
   version "10.1.0"
@@ -4642,10 +4757,10 @@ yargs-parser@^13.1.1:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
 
-yargs-parser@^17.1.0:
-  version "17.1.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/yargs-parser/-/yargs-parser-17.1.0.tgz#b95ff3201e98b89e86070f92bef636016a0b0766"
-  integrity sha1-uV/zIB6YuJ6GBw+SvvY2AWoLB2Y=
+yargs-parser@^18.1.1:
+  version "18.1.1"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/yargs-parser/-/yargs-parser-18.1.1.tgz#bf7407b915427fc760fcbbccc6c82b4f0ffcbd37"
+  integrity sha1-v3QHuRVCf8dg/LvMxsgrTw/8vTc=
   dependencies:
     camelcase "^5.0.0"
     decamelize "^1.2.0"
@@ -4666,10 +4781,10 @@ yargs@^13.3.0:
     y18n "^4.0.0"
     yargs-parser "^13.1.1"
 
-yargs@^15.2.0:
-  version "15.2.0"
-  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/yargs/-/yargs-15.2.0.tgz#cb9fc7f7ec429f7e9329b623f5c707a62dae506a"
-  integrity sha1-y5/H9+xCn36TKbYj9ccHpi2uUGo=
+yargs@^15.3.1:
+  version "15.3.1"
+  resolved "https://olx.jfrog.io/olx/api/npm/nc-olxeu-new-jobs-virtual/yargs/-/yargs-15.3.1.tgz#9505b472763963e54afe60148ad27a330818e98b"
+  integrity sha1-lQW0cnY5Y+VK/mAUitJ6MwgY6Ys=
   dependencies:
     cliui "^6.0.0"
     decamelize "^1.2.0"
@@ -4681,7 +4796,7 @@ yargs@^15.2.0:
     string-width "^4.2.0"
     which-module "^2.0.0"
     y18n "^4.0.0"
-    yargs-parser "^17.1.0"
+    yargs-parser "^18.1.1"
 
 yn@3.1.1:
   version "3.1.1"

@@ -10,7 +10,7 @@ As the name suggests - it's nothing but simple (in my humble opinion), luckily c
 
 (In case you don't know - **and that's okay** - files on S3 are stored in things called "buckets", which are unlimited in size and each bucket has a **globally** unique name.)
 
-Not only S3 buckets can be used to store files, they can also trigger events whenever something is added/deleted/modified in the bucket. In this lesson we're going to trigger our `hello` lambda function whenever a file
+Not only S3 buckets can be used to store files, they can also trigger events whenever something is added/deleted/modified in the bucket. In this lesson we're going to trigger our `hello` lambda function whenever a file.
 
 ## Exercises
 

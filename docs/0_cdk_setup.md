@@ -26,7 +26,7 @@ Sounds complicated, right? Luckily CDK abstracts **a lot** of things away from u
 
 Let's take a look at `lesson_00/lib/todo-app-stack.ts`.
 
-There are some things that I did for you beforehand and you're seeing a result of it. (You're welcome!)
+There are some things that I did for you beforehand and you're seeing a result of it. (_You're welcome!_)
 
 What you're seeing inside is a result of running
 
