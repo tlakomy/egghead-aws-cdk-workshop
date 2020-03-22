@@ -46,7 +46,7 @@ It won't work 😭😭😭
 
 _Do you know what's may cause the error?_
 
-## What we've learned in this section:
+## What we've learned in this lesson:
 
 - Creating a lambda function that is able to scan a DynamoDB table using `aws-cdk`
 - Exposing a lambda function from a construct to be used in another one (like we did with the `handler` function)

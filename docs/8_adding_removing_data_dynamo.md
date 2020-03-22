@@ -40,7 +40,7 @@ curl --location --request DELETE 'https://bn4gqxkbmb.execute-api.eu-central-1.am
 
 4. Congrats! We're going to move on with the rest of the workshop but if you'd like - go back to this lambda function and implement an `editTodo` method :)
 
-## What we've learned in this section:
+## What we've learned in this lesson:
 
 - Using `dynamo.put` and `dynamo.delete` methods in order to add/delete an item from a DynamoDB table
 - Testing the API with `curl` call

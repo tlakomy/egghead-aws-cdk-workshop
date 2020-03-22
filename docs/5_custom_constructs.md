@@ -63,7 +63,7 @@ One more note - it's absolutely possible to create custom constructs and put the
     _Why do we need to have an 'id' field?_
     _We didn't define those `isCompleted` and `todo` fields anywhere, how is it going to work?_
 
-## What we've learned in this section:
+## What we've learned in this lesson:
 
 - Creating a new CDK Construct from scratch and importing it in main stack
 - Creating a DynamoDB table

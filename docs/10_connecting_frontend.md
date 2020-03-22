@@ -47,7 +47,7 @@ in the lambda function (otherwise the preflight check will fail 🤕)
 
    _Why don't you implement edit functionality after the workshop using your newly acquired skills?_
 
-## What we've learned in this section:
+## What we've learned in this lesson:
 
 - Connecting our new backend to frontend by plugging it into `.env`
 - Enabling CORS in an AWS Lambda function

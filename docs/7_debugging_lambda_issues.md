@@ -49,7 +49,7 @@ _Are we going to remove our data by doing that?_
 
 We're getting there! You may definitely add "AWS Permissions Expert" to your LinkedIn account!
 
-## What we've learned in this section:
+## What we've learned in this lesson:
 
 - What is the Principle of Least Privilege in AWS
 - Granting DynamoDB read/write priviledges to a lambda function (with a single line of code, holy crap)

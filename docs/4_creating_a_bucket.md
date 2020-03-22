@@ -38,7 +38,7 @@ Not only S3 buckets can be used to store files, they can also trigger events whe
 
 7. Deploy the stack and verify that the logo has been uploaded to S3
 
-## What we've learned in this section:
+## What we've learned in this lesson:
 
 - Creating an S3 bucket
 - Making an S3 bucket public

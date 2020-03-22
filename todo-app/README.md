@@ -171,7 +171,7 @@ export class NewTodoAppStack extends cdk.Stack {
 }
 ```
 
-**What we've learned in this section:**
+**What we've learned in this lesson:**
 
 -   Modifying the properties of a lambda function
 -   Using env variables in lambda functions
@@ -256,7 +256,7 @@ new s3Deployment.BucketDeployment(this, "DeployLogo", {
 
 -   Verify that the file has been successfully added to S3 and that we're able to access it from the Internet
 
-**What we've learned in this section:**
+**What we've learned in this lesson:**
 
 -   Creating an S3 bucket
 -   Making an S3 bucket public
@@ -319,7 +319,7 @@ Resources
 }
 ```
 
-**What we've learned in this section:**
+**What we've learned in this lesson:**
 
 -   Creating a new CDK Construct from scratch and importing it in main stack
 -   Creating a DynamoDB table
@@ -439,7 +439,7 @@ and run `cdk diff` to see `Get/Put/UpdateItem` etc. allowed for the lambda funct
 
 -   Test the function and notice data being read from DynamoDB
 
-**What we've learned in this section:**
+**What we've learned in this lesson:**
 
 -   Scanning a DynamoDB table using `aws-cdk`
 -   Debugging permission issues using CloudWatch logs
@@ -564,7 +564,7 @@ exports.handler = async function(event: AWSLambda.APIGatewayEvent) {
 };
 ```
 
-**What we've learned in this section:**
+**What we've learned in this lesson:**
 
 Okay, that section is not easy
 
@@ -591,7 +591,7 @@ headers: {
 
 -   Refresh the frontend app and notice that the data is loaded
 
-**What we've learned in this section:**
+**What we've learned in this lesson:**
 
 -   Connecting our new backend to frontend by plugging it into `.env`
 -   Enabling CORS in our lambda function
@@ -634,7 +634,7 @@ NewTodoAppStack.WebsiteUrl = http://newtodoappstack-websitebucket75c24d94-sod2pi
 NewTodoAppStack.Endpoint8024A810 = https://hrqfdwbly9.execute-api.eu-central-1.amazonaws.com/prod/
 ```
 
-**What we've learned in this section:**
+**What we've learned in this lesson:**
 
 -   Creating a S3 Bucket deployment to host a static website
 -   Creating a custom CloudFormation stack output
@@ -653,7 +653,7 @@ NewTodoAppStack.Endpoint8024A810 = https://hrqfdwbly9.execute-api.eu-central-1.a
         });
 ```
 
-**What we've learned in this section:**
+**What we've learned in this lesson:**
 
 -   We don't have to do everything ourselves, we can use constructs made by community
 -   If we want, we can create an entire CDN distribution without leaving our editor

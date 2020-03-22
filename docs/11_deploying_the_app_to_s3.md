@@ -25,3 +25,8 @@ We _could_ just upload the files manually to a bucket but come on, this is 2020 
 1. Deploy the stack
 
 **Yay!** We have a working app deployed to S3 🎉
+
+## What we've learned in this lesson:
+
+- Creating a S3 Bucket deployment to host a static website
+- Creating a custom CloudFormation stack output
