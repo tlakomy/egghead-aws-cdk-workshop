@@ -46,3 +46,8 @@ in the lambda function (otherwise the preflight check will fail 🤕)
 1. Test the app - notice that we cannot edit a todo right now.
 
    _Why don't you implement edit functionality after the workshop using your newly acquired skills?_
+
+## What we've learned in this section:
+
+- Connecting our new backend to frontend by plugging it into `.env`
+- Enabling CORS in an AWS Lambda function
