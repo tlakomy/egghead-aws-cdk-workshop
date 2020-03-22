@@ -1,6 +1,6 @@
 # Build an app with AWS Cloud Development Kit Workshop
 
-## Lesson 13 - Destroying a CDK stack
+## Lesson 14 - Destroying a CDK stack
 
 We've reached the end of the workshop - congrats! 🎉
 
