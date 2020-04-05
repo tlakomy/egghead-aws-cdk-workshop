@@ -12,16 +12,17 @@ If you **do** want to follow along as we build our AWS CDK app (or would like to
 
 (**Please go through all of those steps before the workshop because debugging issues with AWS CLI may involve having to share secret access keys and this is NOT something we want to do. If you have any issues with those steps, please reach out to me.**)
 
--1. Clone this repo
-0. Install [node.js](https://nodejs.org/en/download/)
+1. Clone this repo
+1. Install [node.js](https://nodejs.org/en/download/)
+1. Run `npm install` in both `frontend` and `todo-app` directories
 1. [Create an AWS account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?refid=em_127222) (if you don't have one already).
-2. Install **AWS CLI (Command Line Interface)**. We're going to use [AWS CLI version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) which is available for Linux, MacOS and Windows (Note: if you have version 1 currently installed, it's absolutely fine, you don't have to upgrade to v2 for the workshop)
-3. Configure **AWS CLI** using [this guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
-4. To verify that the **AWS CLI** has been successfully installed and configured you can run `aws s3 ls` in your terminal which should list all S3 buckets in the region you've chosen.
-5. Install the **AWS SAM (Serverless Application Model) CLI** using [this guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html). **AWS SAM CLI** is available for Linux, MacOS and Windows and we're going to use it during the workshop to run Lambda functions locally.
-6. Verify that **AWS SAM CLI** has been successfully installed by running `sam --version` in your terminal. You should see something similar to `SAM CLI, version 0.40.0`.
-7. And **finally** (I'm sorry for all of those steps, but this is not my fault :( Good news is that you won't have to do go through that again!) install **AWS CDK (Cloud Development Kit)** by running `npm install -g aws-cdk`
-8. Verify that AWS CDK has been successfully installed by running `cdk --version` in your terminal. You should see something similar to `1.26.0 (build e251651)`.
+1. Install **AWS CLI (Command Line Interface)**. We're going to use [AWS CLI version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) which is available for Linux, MacOS and Windows (Note: if you have version 1 currently installed, it's absolutely fine, you don't have to upgrade to v2 for the workshop)
+1. Configure **AWS CLI** using [this guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
+1. To verify that the **AWS CLI** has been successfully installed and configured you can run `aws s3 ls` in your terminal which should list all S3 buckets in the region you've chosen.
+1. Install the **AWS SAM (Serverless Application Model) CLI** using [this guide](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html). **AWS SAM CLI** is available for Linux, MacOS and Windows and we're going to use it during the workshop to run Lambda functions locally.
+1. Verify that **AWS SAM CLI** has been successfully installed by running `sam --version` in your terminal. You should see something similar to `SAM CLI, version 0.40.0`.
+1. And **finally** (I'm sorry for all of those steps, but this is not my fault :( Good news is that you won't have to do go through that again!) install **AWS CDK (Cloud Development Kit)** by running `npm install -g aws-cdk`
+1. Verify that AWS CDK has been successfully installed by running `cdk --version` in your terminal. You should see something similar to `1.26.0 (build e251651)`.
 
 **Congrats!** You are now ready for the workshop! Let's rock!
 
