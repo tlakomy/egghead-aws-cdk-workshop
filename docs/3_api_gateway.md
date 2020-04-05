@@ -29,3 +29,8 @@ TL;DR - through the API Gateway we can call a lambda function from the Internet,
 4. Deploy our stack and call the lambda function using both `curl` and the browser
 
    _How do we know which URL to call?_
+
+## What we've learned so far:
+
+- What is an API Gateway?
+- How to create an API Gateway with AWS CDK and how to attach a lambda function to its

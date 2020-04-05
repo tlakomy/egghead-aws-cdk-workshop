@@ -7,6 +7,9 @@ Every AWS resource that we deploy to AWS console is using a set of default value
 ## Exercises
 
 1. Increase the memory available to the lambda function to 256MB
+
+   _Why shouldn't we just bump the memory to 3GB or whatever?_
+
 1. Increase the timeout to 10 seconds using `Duration.seconds`
 
    _What is the maximum duration of a lambda function?_
@@ -20,3 +23,9 @@ Every AWS resource that we deploy to AWS console is using a set of default value
 1. Run `cdk deploy` and test the function in AWS Console
 
    _Did we have to open the CDK docs in order to see what kind of properties we can set for our function?_
+
+## What we've learned so far:
+
+- How to change the non-default properties of a lambda function
+- What's the maximum duration of a lambda function
+- How to use environment variables in a lambda function

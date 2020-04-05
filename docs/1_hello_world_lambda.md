@@ -12,14 +12,14 @@ In order to switch from one lesson to another, we'll need to do 2 things:
 
 - in `todo-app/bin/todo-app.ts` change the import for our stack:
 
-```
+```js
 // Change the lesson number here at a beginning of each lesson
 import { TodoAppStack } from "../lesson_01/lib/todo-app-stack";
 ```
 
 - in `tsconfig.json` ensure that TS compiler will run only for the current lesson (it's necessary due to the way lessons are structured, without it the compiler would freak out because of duplicated types):
 
-```
+```js
 "include": ["bin/*.ts", "test/*.ts", "lesson_01/**/*.ts"],
 ```
 
@@ -30,13 +30,13 @@ Inside of a `lesson_01` directory, create a new directory to store our "hello wo
 Inside of it, create a file called `hello.ts` with a simple lambda function that is going to return a "hello world" message:
 
 ```js
-exports.handler = async function(event: AWSLambda.APIGatewayEvent) {
+exports.handler = async function (event: AWSLambda.APIGatewayEvent) {
   console.log("request:", JSON.stringify(event, null, 2));
 
   return {
     statusCode: 200,
     headers: { "Content-Type": "text/plain" },
-    body: `Hello, egghead friends! You've hit ${event.path}\n`
+    body: `Hello, egghead friends! You've hit ${event.path}\n`,
   };
 };
 ```
@@ -48,8 +48,8 @@ Let's deploy our freshly created Lambda function to AWS. To do that, create a ne
 ```js
 const helloLambda = new lambda.Function(this, "HelloLambda", {
   runtime: lambda.Runtime.NODEJS_12_X,
-  code: lambda.Code.asset("lesson_02/lambda"),
-  handler: "hello.handler"
+  code: lambda.Code.asset("lesson_01/lambda"),
+  handler: "hello.handler",
 });
 ```
 
@@ -72,8 +72,6 @@ const helloLambda = new lambda.Function(this, "HelloLambda", {
    _Is there a way for us to call this function?_
 
 5. Test the function using AWS Lambda Console.
-
-   _What happens if we change the implementation of the function in Console and then redeploy?_
 
 ## What we've learned so far:
 
