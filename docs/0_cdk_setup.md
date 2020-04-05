@@ -44,7 +44,7 @@ which creates a sample stack with an SQS Queue and SNS Topic.
 
 Let's go through it from the top:
 
-```
+```js
 import * as sns from "@aws-cdk/aws-sns";
 import * as subs from "@aws-cdk/aws-sns-subscriptions";
 import * as sqs from "@aws-cdk/aws-sqs";
