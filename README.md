@@ -12,6 +12,8 @@ If you **do** want to follow along as we build our AWS CDK app (or would like to
 
 (**Please go through all of those steps before the workshop because debugging issues with AWS CLI may involve having to share secret access keys and this is NOT something we want to do. If you have any issues with those steps, please reach out to me.**)
 
+-1. Clone this repo
+0. Install [node.js](https://nodejs.org/en/download/)
 1. [Create an AWS account](https://portal.aws.amazon.com/gp/aws/developer/registration/index.html?refid=em_127222) (if you don't have one already).
 2. Install **AWS CLI (Command Line Interface)**. We're going to use [AWS CLI version 2](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) which is available for Linux, MacOS and Windows (Note: if you have version 1 currently installed, it's absolutely fine, you don't have to upgrade to v2 for the workshop)
 3. Configure **AWS CLI** using [this guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
