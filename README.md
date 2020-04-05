@@ -58,6 +58,24 @@ During this course we're going to talk quite a bit about AWS Lambda, DynamoDB an
 
 My own notes: https://gist.github.com/tlakomy/f1312ec1fd092ece75a0f72403235fc8
 
+## Lesson plan
+
+- Lesson 00 - CDK setup and basics
+- Lesson 01 - Our very first _hello world_ AWS Lambda function
+- Lesson 02 - Changing the properties of a lambda function
+- Lesson 03 - Attaching an API Gateway to our lambda function
+- Lesson 03.5 - Executing a lambda function locally
+- Lesson 04 - Creating an S3 bucket with AWS CDK
+- Lesson 05 - Building custom AWS CDK constructs
+- Lesson 06 - Reading data from a DynamoDB table with a Lambda function
+- Lesson 07 - Debugging Lambda + DynamoDB issues and managing permissions in the Cloud
+- Lesson 08 - Adding and removing data from a DynamoDB table
+- Lesson 09 - Using external dependencies in a lambda function with CDK
+- Lesson 10 - Connecting frontend app to an AWS CDK infrastructure
+- Lesson 11 - Deploying the finished app to S3
+- Lesson 12 - Deploying the finished app with CDK-SPA-Deploy
+- Lesson 13 - Destroying a CDK stack
+
 ## What do I do now?
 
 Open the `docs` directory and take a look at [before_we_start.md](docs/before_we_start.md)

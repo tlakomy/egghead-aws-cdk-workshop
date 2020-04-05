@@ -1,6 +1,6 @@
 # Build an app with AWS Cloud Development Kit Workshop
 
-## Lesson 06 - Reading DynamoDB table with a Lambda function
+## Lesson 06 - Reading data from a DynamoDB table with a Lambda function
 
 Now we're getting somewhere 🎉
 

@@ -1,0 +1,21 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Resources": {
+    "PullMarkets": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "FunctionName": "PullMarkets",
+        "Handler": "lambda/index.handler",
+        "Role": {
+          "Fn::GetAtt": ["PullMarketsRole", "Arn"]
+        },
+        "Code": {
+          "S3Bucket": "my-lambda-functions",
+          "S3Key": "PullMarketCode"
+        },
+        "Runtime": "nodejs8.10",
+        "Timeout": 300
+      }
+    }
+  }
+}

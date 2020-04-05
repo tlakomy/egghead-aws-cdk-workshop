@@ -1,6 +1,6 @@
 # Build an app with AWS Cloud Development Kit Workshop
 
-## Lesson 04 - Creating an S3 bucket
+## Lesson 04 - Creating an S3 bucket with AWS CDK
 
 Lambdas and API Gateways are not the only type of AWS resource we can deploy to AWS cloud using CDK. In fact - nearly every resource that is deployable (is that a word?) with CloudFormation, can also be deployed with AWS CDK.
 

@@ -22,6 +22,10 @@ In essence - it's going to convert our code written in TypeScript, to JavaScript
 
 Sounds complicated, right? Luckily CDK abstracts **a lot** of things away from us, so we get to focus on solving our problems instead of writing YAML by hand.
 
+## How does it compare against AWS SAM, Serverless Framework and CloudFormation?
+
+Great question! Let's take a look at `examples` directory to see an example of all of those different solutions for deploying resources in the cloud and go through them.
+
 ## What's inside of a lesson 00?
 
 Let's take a look at `lesson_00/lib/todo-app-stack.ts`.
@@ -61,7 +65,7 @@ In this example, we see that our stack is going to create an SQS Queue and SNS T
 
 ```js
 const queue = new sqs.Queue(this, "TestCdkQueue", {
-  visibilityTimeout: cdk.Duration.seconds(300)
+  visibilityTimeout: cdk.Duration.seconds(300),
 });
 
 const topic = new sns.Topic(this, "TestCdkTopic");
