@@ -2,7 +2,7 @@
 
 ## Lesson 07 - Debugging Lambda + DynamoDB issues and managing permissions in the Cloud
 
-This lesson is now AWS CDK specific but it's important to understand what kind of tools we can use to debug issues in our CDK stack.
+This lesson is not AWS CDK specific but it's important to understand what kind of tools we can use to debug issues in our CDK stack.
 
 After all, it's in **THE CLOUD** so it's not like we can restart a laptop and keep our fingers crossed that it'll fix the issue.
 

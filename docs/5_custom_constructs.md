@@ -32,7 +32,17 @@ One more note - it's absolutely possible to create custom constructs and put the
 
 1. Create a new file in `lib` directory, we're going to call it `todo-database.ts`.
 
-2. Create a new empty `TodoDatabase` construct
+2. Create a new empty `TodoDatabase` construct:
+
+```js
+import * as cdk from "@aws-cdk/core";
+
+export class TodoDatabase extends cdk.Construct {
+  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+    super(scope, id);
+  }
+}
+```
 
 3. Import and create an instance of the construct in the main `todo-app-stack.ts` stack
 
@@ -60,8 +70,8 @@ One more note - it's absolutely possible to create custom constructs and put the
 }
 ```
 
-    _Why do we need to have an 'id' field?_
-    _We didn't define those `isCompleted` and `todo` fields anywhere, how is it going to work?_
+_Why do we need to have an 'id' field?_
+_We didn't define those `isCompleted` and `todo` fields anywhere, how is it going to work?_
 
 ## What we've learned in this lesson:
 

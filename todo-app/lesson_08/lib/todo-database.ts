@@ -13,7 +13,7 @@ export class TodoDatabase extends cdk.Construct {
         });
 
         this.handler = new lambda.Function(this, "TodoHandler", {
-            code: lambda.Code.fromAsset("lesson_07/lambda"),
+            code: lambda.Code.fromAsset("lesson_08/lambda"),
             handler: "todoHandler.handler",
             runtime: lambda.Runtime.NODEJS_12_X,
             environment: {

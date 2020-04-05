@@ -25,3 +25,8 @@ curl --request POST 'https://bn4gqxkbmb.execute-api.eu-central-1.amazonaws.com/p
 ```
 
 6. Take a look at the lambda function in AWS Console to see what happened to the `node_modules` and where they ended up.
+
+## What we've learned in this lesson:
+
+- That lambda functions can use external dependencies
+- How can you add an external dependency to a lambda function built with AWS CDK
