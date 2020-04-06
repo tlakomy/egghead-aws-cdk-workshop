@@ -11,7 +11,7 @@ Our backend and infrastructure (that we've built ourselves, with TypeScript and 
 ## Exercises
 
 1. Check out the `frontend` directory, this is where our app lives
-1. Run `yarn` (or `npm install`) to install all necessary dependencies
+1. Run `yarn` (or `npm install`) to install all necessary dependencies (if you haven't done so beforehand)
 1. Run `npm start` to start up the app
 1. Crap, it's broken 🤕
 
@@ -41,7 +41,7 @@ if (httpMethod === "OPTIONS") {
 
 in the lambda function (otherwise the preflight check will fail 🤕)
 
-1. Fix the `<Logo src="">` in `App.tsx` so that it contains the url to logo that we've deployed previously to an S3 bucket
+1. Deploy the function and in the meantime - fix the `<Logo src="">` in `App.tsx` so that it contains the url to logo that we've deployed previously to an S3 bucket
 
 1. Test the app - notice that we cannot edit a todo right now.
 

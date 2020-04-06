@@ -10,7 +10,7 @@ Let's change our function to use a `uuid()` package from `npm` instead in this q
 
 ## Exercises
 
-1. Go to `lesson_10/lambda` directory and run `npm init -y`
+1. Go to `lesson_09/lambda` directory and run `npm init -y`
 2. Install `uuid` - `yarn add uuid`
 3. Use `uuid()` package in the lambda function to be used if an `id` was not provided by whoever sent the request.
 4. Deploy the stack (remember to change the lesson number in `todo-database.ts` beforehand)
