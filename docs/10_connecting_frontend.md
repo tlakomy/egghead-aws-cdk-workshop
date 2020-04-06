@@ -41,6 +41,8 @@ if (httpMethod === "OPTIONS") {
 
 in the lambda function (otherwise the preflight check will fail 🤕)
 
+1. Before you deploy - **make sure to check if dependencies are installed** in lesson 10 lambda function
+
 1. Deploy the function and in the meantime - fix the `<Logo src="">` in `App.tsx` so that it contains the url to logo that we've deployed previously to an S3 bucket
 
 1. Test the app - notice that we cannot edit a todo right now.
