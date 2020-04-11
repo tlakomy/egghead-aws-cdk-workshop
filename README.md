@@ -24,6 +24,8 @@ If you **do** want to follow along as we build our AWS CDK app (or would like to
 1. And **finally** (I'm sorry for all of those steps, but this is not my fault :( Good news is that you won't have to do go through that again!) install **AWS CDK (Cloud Development Kit)** by running `npm install -g aws-cdk`
 1. Verify that AWS CDK has been successfully installed by running `cdk --version` in your terminal. You should see something similar to `1.26.0 (build e251651)`.
 
+**UPDATE:** I've recorded an egghead.io lesson that shows how to configure AWS CLI: [Create an admin user with IAM and configure AWS CLI to enable programmatic access to AWS](https://egghead.io/lessons/egghead-create-an-admin-user-with-iam-and-configure-aws-cli-to-enable-programmatic-access-to-aws?af=6p5abz)
+
 **Congrats!** You are now ready for the workshop! Let's rock!
 
 ## Who are you, again?
